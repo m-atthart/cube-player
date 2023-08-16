@@ -9,105 +9,131 @@ export type CubeColour =
 export type Cube = {
   corners: {
     UBL: {
-      U: CubeColour;
-      B: CubeColour;
-      L: CubeColour;
+      U: { colour: CubeColour; letter: "A"; sticker: null };
+      B: { colour: CubeColour; letter: "R"; sticker: null };
+      L: { colour: CubeColour; letter: "E"; sticker: null };
     };
     UBR: {
-      U: CubeColour;
-      B: CubeColour;
-      R: CubeColour;
+      U: { colour: CubeColour; letter: "B"; sticker: null };
+      B: { colour: CubeColour; letter: "Q"; sticker: null };
+      R: { colour: CubeColour; letter: "N"; sticker: null };
     };
     UFR: {
-      U: CubeColour;
-      F: CubeColour;
-      R: CubeColour;
+      U: { colour: CubeColour; letter: "C"; sticker: null };
+      F: { colour: CubeColour; letter: "J"; sticker: null };
+      R: { colour: CubeColour; letter: "M"; sticker: null };
     };
     UFL: {
-      U: CubeColour;
-      F: CubeColour;
-      L: CubeColour;
+      U: { colour: CubeColour; letter: "D"; sticker: null };
+      F: { colour: CubeColour; letter: "I"; sticker: null };
+      L: { colour: CubeColour; letter: "F"; sticker: null };
     };
     DFL: {
-      D: CubeColour;
-      F: CubeColour;
-      L: CubeColour;
+      D: { colour: CubeColour; letter: "U"; sticker: null };
+      F: { colour: CubeColour; letter: "L"; sticker: null };
+      L: { colour: CubeColour; letter: "G"; sticker: null };
     };
     DFR: {
-      D: CubeColour;
-      F: CubeColour;
-      R: CubeColour;
+      D: { colour: CubeColour; letter: "V"; sticker: null };
+      F: { colour: CubeColour; letter: "K"; sticker: null };
+      R: { colour: CubeColour; letter: "P"; sticker: null };
     };
     DBR: {
-      D: CubeColour;
-      B: CubeColour;
-      R: CubeColour;
+      D: { colour: CubeColour; letter: "W"; sticker: null };
+      B: { colour: CubeColour; letter: "T"; sticker: null };
+      R: { colour: CubeColour; letter: "O"; sticker: null };
     };
     DBL: {
-      D: CubeColour;
-      B: CubeColour;
-      L: CubeColour;
+      D: { colour: CubeColour; letter: "X"; sticker: null };
+      B: { colour: CubeColour; letter: "S"; sticker: null };
+      L: { colour: CubeColour; letter: "H"; sticker: null };
     };
   };
   edges: {
     UB: {
-      U: CubeColour;
-      B: CubeColour;
+      U: { colour: CubeColour; letter: "A"; sticker: null };
+      B: { colour: CubeColour; letter: "Q"; sticker: null };
     };
     UR: {
-      U: CubeColour;
-      R: CubeColour;
+      U: { colour: CubeColour; letter: "B"; sticker: null };
+      R: { colour: CubeColour; letter: "M"; sticker: null };
     };
     UF: {
-      U: CubeColour;
-      F: CubeColour;
+      U: { colour: CubeColour; letter: "C"; sticker: null };
+      F: { colour: CubeColour; letter: "I"; sticker: null };
     };
     UL: {
-      U: CubeColour;
-      L: CubeColour;
+      U: { colour: CubeColour; letter: "D"; sticker: null };
+      L: { colour: CubeColour; letter: "E"; sticker: null };
     };
     FL: {
-      F: CubeColour;
-      L: CubeColour;
+      F: { colour: CubeColour; letter: "L"; sticker: null };
+      L: { colour: CubeColour; letter: "F"; sticker: null };
     };
     FR: {
-      F: CubeColour;
-      R: CubeColour;
+      F: { colour: CubeColour; letter: "J"; sticker: null };
+      R: { colour: CubeColour; letter: "P"; sticker: null };
     };
     BR: {
-      B: CubeColour;
-      R: CubeColour;
+      B: { colour: CubeColour; letter: "T"; sticker: null };
+      R: { colour: CubeColour; letter: "N"; sticker: null };
     };
     BL: {
-      B: CubeColour;
-      L: CubeColour;
+      B: { colour: CubeColour; letter: "R"; sticker: null };
+      L: { colour: CubeColour; letter: "H"; sticker: null };
     };
     DF: {
-      D: CubeColour;
-      F: CubeColour;
+      D: { colour: CubeColour; letter: "U"; sticker: null };
+      F: { colour: CubeColour; letter: "K"; sticker: null };
     };
     DR: {
-      D: CubeColour;
-      R: CubeColour;
+      D: { colour: CubeColour; letter: "V"; sticker: null };
+      R: { colour: CubeColour; letter: "O"; sticker: null };
     };
     DB: {
-      D: CubeColour;
-      B: CubeColour;
+      D: { colour: CubeColour; letter: "W"; sticker: null };
+      B: { colour: CubeColour; letter: "S"; sticker: null };
     };
     DL: {
-      D: CubeColour;
-      L: CubeColour;
+      D: { colour: CubeColour; letter: "X"; sticker: null };
+      L: { colour: CubeColour; letter: "G"; sticker: null };
     };
   };
   centers: {
-    U: CubeColour;
-    D: CubeColour;
-    F: CubeColour;
-    B: CubeColour;
-    R: CubeColour;
-    L: CubeColour;
+    U: { colour: CubeColour; letter: "U"; sticker: null };
+    D: { colour: CubeColour; letter: "D"; sticker: null };
+    F: { colour: CubeColour; letter: "F"; sticker: null };
+    B: { colour: CubeColour; letter: "B"; sticker: null };
+    R: { colour: CubeColour; letter: "R"; sticker: null };
+    L: { colour: CubeColour; letter: "L"; sticker: null };
   };
 };
+
+export type ValidStickerLetter =
+  | "A"
+  | "B"
+  | "C"
+  | "D"
+  | "E"
+  | "F"
+  | "G"
+  | "H"
+  | "I"
+  | "J"
+  | "K"
+  | "L"
+  | "M"
+  | "N"
+  | "O"
+  | "P"
+  | "Q"
+  | "R"
+  | "S"
+  | "T"
+  | "U"
+  | "V"
+  | "W"
+  | "X";
 
 export type LegalMove =
   | "R"
@@ -151,103 +177,103 @@ export function getSolvedCube() {
   const solvedCube: Cube = {
     corners: {
       UBL: {
-        U: "blue",
-        B: "yellow",
-        L: "orange",
+        U: { colour: "blue", letter: "A", sticker: null },
+        B: { colour: "yellow", letter: "R", sticker: null },
+        L: { colour: "orange", letter: "E", sticker: null },
       },
       UBR: {
-        U: "blue",
-        B: "yellow",
-        R: "red",
+        U: { colour: "blue", letter: "B", sticker: null },
+        B: { colour: "yellow", letter: "Q", sticker: null },
+        R: { colour: "red", letter: "N", sticker: null },
       },
       UFR: {
-        U: "blue",
-        F: "white",
-        R: "red",
+        U: { colour: "blue", letter: "C", sticker: null },
+        F: { colour: "white", letter: "J", sticker: null },
+        R: { colour: "red", letter: "M", sticker: null },
       },
       UFL: {
-        U: "blue",
-        F: "white",
-        L: "orange",
+        U: { colour: "blue", letter: "D", sticker: null },
+        F: { colour: "white", letter: "I", sticker: null },
+        L: { colour: "orange", letter: "F", sticker: null },
       },
       DFL: {
-        D: "green",
-        F: "white",
-        L: "orange",
+        D: { colour: "green", letter: "U", sticker: null },
+        F: { colour: "white", letter: "L", sticker: null },
+        L: { colour: "orange", letter: "G", sticker: null },
       },
       DFR: {
-        D: "green",
-        F: "white",
-        R: "red",
+        D: { colour: "green", letter: "V", sticker: null },
+        F: { colour: "white", letter: "K", sticker: null },
+        R: { colour: "red", letter: "P", sticker: null },
       },
       DBR: {
-        D: "green",
-        B: "yellow",
-        R: "red",
+        D: { colour: "green", letter: "W", sticker: null },
+        B: { colour: "yellow", letter: "T", sticker: null },
+        R: { colour: "red", letter: "O", sticker: null },
       },
       DBL: {
-        D: "green",
-        B: "yellow",
-        L: "orange",
+        D: { colour: "green", letter: "X", sticker: null },
+        B: { colour: "yellow", letter: "S", sticker: null },
+        L: { colour: "orange", letter: "H", sticker: null },
       },
     },
     edges: {
       UB: {
-        U: "blue",
-        B: "yellow",
+        U: { colour: "blue", letter: "A", sticker: null },
+        B: { colour: "yellow", letter: "Q", sticker: null },
       },
       UR: {
-        U: "blue",
-        R: "red",
+        U: { colour: "blue", letter: "B", sticker: null },
+        R: { colour: "red", letter: "M", sticker: null },
       },
       UF: {
-        U: "blue",
-        F: "white",
+        U: { colour: "blue", letter: "C", sticker: null },
+        F: { colour: "white", letter: "I", sticker: null },
       },
       UL: {
-        U: "blue",
-        L: "orange",
+        U: { colour: "blue", letter: "D", sticker: null },
+        L: { colour: "orange", letter: "E", sticker: null },
       },
       FL: {
-        F: "white",
-        L: "orange",
+        F: { colour: "white", letter: "L", sticker: null },
+        L: { colour: "orange", letter: "F", sticker: null },
       },
       FR: {
-        F: "white",
-        R: "red",
+        F: { colour: "white", letter: "J", sticker: null },
+        R: { colour: "red", letter: "P", sticker: null },
       },
       BR: {
-        B: "yellow",
-        R: "red",
+        B: { colour: "yellow", letter: "T", sticker: null },
+        R: { colour: "red", letter: "N", sticker: null },
       },
       BL: {
-        B: "yellow",
-        L: "orange",
+        B: { colour: "yellow", letter: "R", sticker: null },
+        L: { colour: "orange", letter: "H", sticker: null },
       },
       DF: {
-        D: "green",
-        F: "white",
+        D: { colour: "green", letter: "U", sticker: null },
+        F: { colour: "white", letter: "K", sticker: null },
       },
       DR: {
-        D: "green",
-        R: "red",
+        D: { colour: "green", letter: "V", sticker: null },
+        R: { colour: "red", letter: "O", sticker: null },
       },
       DB: {
-        D: "green",
-        B: "yellow",
+        D: { colour: "green", letter: "W", sticker: null },
+        B: { colour: "yellow", letter: "S", sticker: null },
       },
       DL: {
-        D: "green",
-        L: "orange",
+        D: { colour: "green", letter: "X", sticker: null },
+        L: { colour: "orange", letter: "G", sticker: null },
       },
     },
     centers: {
-      U: "blue",
-      D: "green",
-      F: "white",
-      B: "yellow",
-      R: "red",
-      L: "orange",
+      U: { colour: "blue", letter: "U", sticker: null },
+      D: { colour: "green", letter: "D", sticker: null },
+      F: { colour: "white", letter: "F", sticker: null },
+      B: { colour: "yellow", letter: "B", sticker: null },
+      R: { colour: "red", letter: "R", sticker: null },
+      L: { colour: "orange", letter: "L", sticker: null },
     },
   };
 
@@ -274,568 +300,1300 @@ export function performAlg(cube: Cube, algorithm: string) {
 export function turn(cube: Cube, move: string) {
   switch (move) {
     case "R": {
-      const tempCorner = { ...cube.corners.UFR };
-      const tempEdge = { ...cube.edges.UR };
+      const tempCorner = {
+        C: getStickerColour(cube, "corner", "C"),
+        J: getStickerColour(cube, "corner", "J"),
+        M: getStickerColour(cube, "corner", "M"),
+      };
+      const tempEdge = {
+        B: getStickerColour(cube, "edge", "B"),
+        M: getStickerColour(cube, "edge", "M"),
+      };
 
-      cube.corners.UFR.U = cube.corners.DFR.F;
-      cube.corners.UFR.F = cube.corners.DFR.D;
-      cube.corners.UFR.R = cube.corners.DFR.R;
+      setStickerColour(
+        cube,
+        "corner",
+        "C",
+        getStickerColour(cube, "corner", "K")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "J",
+        getStickerColour(cube, "corner", "V")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "M",
+        getStickerColour(cube, "corner", "P")
+      );
 
-      cube.corners.DFR.D = cube.corners.DBR.B;
-      cube.corners.DFR.F = cube.corners.DBR.D;
-      cube.corners.DFR.R = cube.corners.DBR.R;
+      setStickerColour(
+        cube,
+        "corner",
+        "V",
+        getStickerColour(cube, "corner", "T")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "K",
+        getStickerColour(cube, "corner", "W")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "P",
+        getStickerColour(cube, "corner", "O")
+      );
 
-      cube.corners.DBR.D = cube.corners.UBR.B;
-      cube.corners.DBR.B = cube.corners.UBR.U;
-      cube.corners.DBR.R = cube.corners.UBR.R;
+      setStickerColour(
+        cube,
+        "corner",
+        "W",
+        getStickerColour(cube, "corner", "Q")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "T",
+        getStickerColour(cube, "corner", "B")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "O",
+        getStickerColour(cube, "corner", "N")
+      );
 
-      cube.corners.UBR.U = tempCorner.F;
-      cube.corners.UBR.B = tempCorner.U;
-      cube.corners.UBR.R = tempCorner.R;
+      setStickerColour(cube, "corner", "B", tempCorner.J);
+      setStickerColour(cube, "corner", "Q", tempCorner.C);
+      setStickerColour(cube, "corner", "N", tempCorner.M);
 
-      cube.edges.UR.U = cube.edges.FR.F;
-      cube.edges.UR.R = cube.edges.FR.R;
+      setStickerColour(cube, "edge", "B", getStickerColour(cube, "edge", "J"));
+      setStickerColour(cube, "edge", "M", getStickerColour(cube, "edge", "P"));
 
-      cube.edges.FR.F = cube.edges.DR.D;
-      cube.edges.FR.R = cube.edges.DR.R;
+      setStickerColour(cube, "edge", "J", getStickerColour(cube, "edge", "V"));
+      setStickerColour(cube, "edge", "P", getStickerColour(cube, "edge", "O"));
 
-      cube.edges.DR.D = cube.edges.BR.B;
-      cube.edges.DR.R = cube.edges.BR.R;
+      setStickerColour(cube, "edge", "V", getStickerColour(cube, "edge", "T"));
+      setStickerColour(cube, "edge", "O", getStickerColour(cube, "edge", "N"));
 
-      cube.edges.BR.B = tempEdge.U;
-      cube.edges.BR.R = tempEdge.R;
+      setStickerColour(cube, "edge", "T", tempEdge.B);
+      setStickerColour(cube, "edge", "N", tempEdge.M);
 
       break;
     }
 
     case "R'": {
-      const tempCorner = { ...cube.corners.UFR };
-      const tempEdge = { ...cube.edges.UR };
+      const tempCorner = {
+        C: getStickerColour(cube, "corner", "C"),
+        J: getStickerColour(cube, "corner", "J"),
+        M: getStickerColour(cube, "corner", "M"),
+      };
+      const tempEdge = {
+        B: getStickerColour(cube, "edge", "B"),
+        M: getStickerColour(cube, "edge", "M"),
+      };
 
-      cube.corners.UFR.U = cube.corners.UBR.B;
-      cube.corners.UFR.F = cube.corners.UBR.U;
-      cube.corners.UFR.R = cube.corners.UBR.R;
+      setStickerColour(
+        cube,
+        "corner",
+        "C",
+        getStickerColour(cube, "corner", "Q")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "J",
+        getStickerColour(cube, "corner", "B")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "M",
+        getStickerColour(cube, "corner", "N")
+      );
 
-      cube.corners.UBR.U = cube.corners.DBR.B;
-      cube.corners.UBR.B = cube.corners.DBR.D;
-      cube.corners.UBR.R = cube.corners.DBR.R;
+      setStickerColour(
+        cube,
+        "corner",
+        "B",
+        getStickerColour(cube, "corner", "T")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "Q",
+        getStickerColour(cube, "corner", "W")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "N",
+        getStickerColour(cube, "corner", "O")
+      );
 
-      cube.corners.DBR.D = cube.corners.DFR.F;
-      cube.corners.DBR.B = cube.corners.DFR.D;
-      cube.corners.DBR.R = cube.corners.DFR.R;
+      setStickerColour(
+        cube,
+        "corner",
+        "W",
+        getStickerColour(cube, "corner", "K")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "T",
+        getStickerColour(cube, "corner", "V")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "O",
+        getStickerColour(cube, "corner", "P")
+      );
 
-      cube.corners.DFR.D = tempCorner.F;
-      cube.corners.DFR.F = tempCorner.U;
-      cube.corners.DFR.R = tempCorner.R;
+      setStickerColour(cube, "corner", "V", tempCorner.J);
+      setStickerColour(cube, "corner", "K", tempCorner.C);
+      setStickerColour(cube, "corner", "P", tempCorner.M);
 
-      cube.edges.UR.U = cube.edges.BR.B;
-      cube.edges.UR.R = cube.edges.BR.R;
+      setStickerColour(cube, "edge", "B", getStickerColour(cube, "edge", "T"));
+      setStickerColour(cube, "edge", "M", getStickerColour(cube, "edge", "N"));
 
-      cube.edges.BR.B = cube.edges.DR.D;
-      cube.edges.BR.R = cube.edges.DR.R;
+      setStickerColour(cube, "edge", "T", getStickerColour(cube, "edge", "V"));
+      setStickerColour(cube, "edge", "N", getStickerColour(cube, "edge", "O"));
 
-      cube.edges.DR.D = cube.edges.FR.F;
-      cube.edges.DR.R = cube.edges.FR.R;
+      setStickerColour(cube, "edge", "V", getStickerColour(cube, "edge", "J"));
+      setStickerColour(cube, "edge", "O", getStickerColour(cube, "edge", "P"));
 
-      cube.edges.FR.F = tempEdge.U;
-      cube.edges.FR.R = tempEdge.R;
+      setStickerColour(cube, "edge", "J", tempEdge.B);
+      setStickerColour(cube, "edge", "P", tempEdge.M);
 
       break;
     }
 
     case "L": {
-      const tempCorner = { ...cube.corners.UFL };
-      const tempEdge = { ...cube.edges.UL };
+      const tempCorner = {
+        D: getStickerColour(cube, "corner", "D"),
+        I: getStickerColour(cube, "corner", "I"),
+        F: getStickerColour(cube, "corner", "F"),
+      };
+      const tempEdge = {
+        D: getStickerColour(cube, "edge", "D"),
+        E: getStickerColour(cube, "edge", "E"),
+      };
 
-      cube.corners.UFL.U = cube.corners.UBL.B;
-      cube.corners.UFL.F = cube.corners.UBL.U;
-      cube.corners.UFL.L = cube.corners.UBL.L;
+      setStickerColour(
+        cube,
+        "corner",
+        "D",
+        getStickerColour(cube, "corner", "R")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "I",
+        getStickerColour(cube, "corner", "A")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "F",
+        getStickerColour(cube, "corner", "E")
+      );
 
-      cube.corners.UBL.U = cube.corners.DBL.B;
-      cube.corners.UBL.B = cube.corners.DBL.D;
-      cube.corners.UBL.L = cube.corners.DBL.L;
+      setStickerColour(
+        cube,
+        "corner",
+        "A",
+        getStickerColour(cube, "corner", "S")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "R",
+        getStickerColour(cube, "corner", "X")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "E",
+        getStickerColour(cube, "corner", "H")
+      );
 
-      cube.corners.DBL.D = cube.corners.DFL.F;
-      cube.corners.DBL.B = cube.corners.DFL.D;
-      cube.corners.DBL.L = cube.corners.DFL.L;
+      setStickerColour(
+        cube,
+        "corner",
+        "X",
+        getStickerColour(cube, "corner", "L")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "S",
+        getStickerColour(cube, "corner", "U")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "H",
+        getStickerColour(cube, "corner", "G")
+      );
 
-      cube.corners.DFL.D = tempCorner.F;
-      cube.corners.DFL.F = tempCorner.U;
-      cube.corners.DFL.L = tempCorner.L;
+      setStickerColour(cube, "corner", "U", tempCorner.I);
+      setStickerColour(cube, "corner", "L", tempCorner.D);
+      setStickerColour(cube, "corner", "G", tempCorner.F);
 
-      cube.edges.UL.U = cube.edges.BL.B;
-      cube.edges.UL.L = cube.edges.BL.L;
+      setStickerColour(cube, "edge", "D", getStickerColour(cube, "edge", "R"));
+      setStickerColour(cube, "edge", "E", getStickerColour(cube, "edge", "H"));
 
-      cube.edges.BL.B = cube.edges.DL.D;
-      cube.edges.BL.L = cube.edges.DL.L;
+      setStickerColour(cube, "edge", "R", getStickerColour(cube, "edge", "X"));
+      setStickerColour(cube, "edge", "H", getStickerColour(cube, "edge", "G"));
 
-      cube.edges.DL.D = cube.edges.FL.F;
-      cube.edges.DL.L = cube.edges.FL.L;
+      setStickerColour(cube, "edge", "X", getStickerColour(cube, "edge", "L"));
+      setStickerColour(cube, "edge", "G", getStickerColour(cube, "edge", "F"));
 
-      cube.edges.FL.F = tempEdge.U;
-      cube.edges.FL.L = tempEdge.L;
+      setStickerColour(cube, "edge", "L", tempEdge.D);
+      setStickerColour(cube, "edge", "F", tempEdge.E);
 
       break;
     }
 
     case "L'": {
-      const tempCorner = { ...cube.corners.UFL };
-      const tempEdge = { ...cube.edges.UL };
+      const tempCorner = {
+        D: getStickerColour(cube, "corner", "D"),
+        I: getStickerColour(cube, "corner", "I"),
+        F: getStickerColour(cube, "corner", "F"),
+      };
+      const tempEdge = {
+        D: getStickerColour(cube, "edge", "D"),
+        E: getStickerColour(cube, "edge", "E"),
+      };
 
-      cube.corners.UFL.U = cube.corners.DFL.F;
-      cube.corners.UFL.F = cube.corners.DFL.D;
-      cube.corners.UFL.L = cube.corners.DFL.L;
+      setStickerColour(
+        cube,
+        "corner",
+        "D",
+        getStickerColour(cube, "corner", "L")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "I",
+        getStickerColour(cube, "corner", "U")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "F",
+        getStickerColour(cube, "corner", "G")
+      );
 
-      cube.corners.DFL.D = cube.corners.DBL.B;
-      cube.corners.DFL.F = cube.corners.DBL.D;
-      cube.corners.DFL.L = cube.corners.DBL.L;
+      setStickerColour(
+        cube,
+        "corner",
+        "U",
+        getStickerColour(cube, "corner", "S")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "L",
+        getStickerColour(cube, "corner", "X")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "G",
+        getStickerColour(cube, "corner", "H")
+      );
 
-      cube.corners.DBL.D = cube.corners.UBL.B;
-      cube.corners.DBL.B = cube.corners.UBL.U;
-      cube.corners.DBL.L = cube.corners.UBL.L;
+      setStickerColour(
+        cube,
+        "corner",
+        "X",
+        getStickerColour(cube, "corner", "R")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "S",
+        getStickerColour(cube, "corner", "A")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "H",
+        getStickerColour(cube, "corner", "E")
+      );
 
-      cube.corners.UBL.U = tempCorner.F;
-      cube.corners.UBL.B = tempCorner.U;
-      cube.corners.UBL.L = tempCorner.L;
+      setStickerColour(cube, "corner", "A", tempCorner.I);
+      setStickerColour(cube, "corner", "R", tempCorner.D);
+      setStickerColour(cube, "corner", "E", tempCorner.F);
 
-      cube.edges.UL.U = cube.edges.FL.F;
-      cube.edges.UL.L = cube.edges.FL.L;
+      setStickerColour(cube, "edge", "D", getStickerColour(cube, "edge", "L"));
+      setStickerColour(cube, "edge", "E", getStickerColour(cube, "edge", "F"));
 
-      cube.edges.FL.F = cube.edges.DL.D;
-      cube.edges.FL.L = cube.edges.DL.L;
+      setStickerColour(cube, "edge", "L", getStickerColour(cube, "edge", "X"));
+      setStickerColour(cube, "edge", "F", getStickerColour(cube, "edge", "G"));
 
-      cube.edges.DL.D = cube.edges.BL.B;
-      cube.edges.DL.L = cube.edges.BL.L;
+      setStickerColour(cube, "edge", "X", getStickerColour(cube, "edge", "R"));
+      setStickerColour(cube, "edge", "G", getStickerColour(cube, "edge", "H"));
 
-      cube.edges.BL.B = tempEdge.U;
-      cube.edges.BL.L = tempEdge.L;
+      setStickerColour(cube, "edge", "R", tempEdge.D);
+      setStickerColour(cube, "edge", "H", tempEdge.E);
 
       break;
     }
 
     case "U": {
-      const tempCorner = { ...cube.corners.UFR };
-      const tempEdge = { ...cube.edges.UF };
+      const tempCorner = {
+        C: getStickerColour(cube, "corner", "C"),
+        J: getStickerColour(cube, "corner", "J"),
+        M: getStickerColour(cube, "corner", "M"),
+      };
+      const tempEdge = {
+        C: getStickerColour(cube, "edge", "C"),
+        I: getStickerColour(cube, "edge", "I"),
+      };
 
-      cube.corners.UFR.U = cube.corners.UBR.U;
-      cube.corners.UFR.F = cube.corners.UBR.R;
-      cube.corners.UFR.R = cube.corners.UBR.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "C",
+        getStickerColour(cube, "corner", "B")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "J",
+        getStickerColour(cube, "corner", "N")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "M",
+        getStickerColour(cube, "corner", "Q")
+      );
 
-      cube.corners.UBR.U = cube.corners.UBL.U;
-      cube.corners.UBR.B = cube.corners.UBL.L;
-      cube.corners.UBR.R = cube.corners.UBL.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "B",
+        getStickerColour(cube, "corner", "A")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "Q",
+        getStickerColour(cube, "corner", "E")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "N",
+        getStickerColour(cube, "corner", "R")
+      );
 
-      cube.corners.UBL.U = cube.corners.UFL.U;
-      cube.corners.UBL.B = cube.corners.UFL.L;
-      cube.corners.UBL.L = cube.corners.UFL.F;
+      setStickerColour(
+        cube,
+        "corner",
+        "A",
+        getStickerColour(cube, "corner", "D")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "R",
+        getStickerColour(cube, "corner", "F")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "E",
+        getStickerColour(cube, "corner", "I")
+      );
 
-      cube.corners.UFL.U = tempCorner.U;
-      cube.corners.UFL.F = tempCorner.R;
-      cube.corners.UFL.L = tempCorner.F;
+      setStickerColour(cube, "corner", "D", tempCorner.C);
+      setStickerColour(cube, "corner", "I", tempCorner.M);
+      setStickerColour(cube, "corner", "F", tempCorner.J);
 
-      cube.edges.UF.U = cube.edges.UR.U;
-      cube.edges.UF.F = cube.edges.UR.R;
+      setStickerColour(cube, "edge", "C", getStickerColour(cube, "edge", "B"));
+      setStickerColour(cube, "edge", "I", getStickerColour(cube, "edge", "M"));
 
-      cube.edges.UR.U = cube.edges.UB.U;
-      cube.edges.UR.R = cube.edges.UB.B;
+      setStickerColour(cube, "edge", "B", getStickerColour(cube, "edge", "A"));
+      setStickerColour(cube, "edge", "M", getStickerColour(cube, "edge", "Q"));
 
-      cube.edges.UB.U = cube.edges.UL.U;
-      cube.edges.UB.B = cube.edges.UL.L;
+      setStickerColour(cube, "edge", "A", getStickerColour(cube, "edge", "D"));
+      setStickerColour(cube, "edge", "Q", getStickerColour(cube, "edge", "E"));
 
-      cube.edges.UL.U = tempEdge.U;
-      cube.edges.UL.L = tempEdge.F;
+      setStickerColour(cube, "edge", "D", tempEdge.C);
+      setStickerColour(cube, "edge", "E", tempEdge.I);
 
       break;
     }
 
     case "U'": {
-      const tempCorner = { ...cube.corners.UFL };
-      const tempEdge = { ...cube.edges.UF };
+      const tempCorner = {
+        D: getStickerColour(cube, "corner", "D"),
+        I: getStickerColour(cube, "corner", "I"),
+        F: getStickerColour(cube, "corner", "F"),
+      };
+      const tempEdge = {
+        C: getStickerColour(cube, "edge", "C"),
+        I: getStickerColour(cube, "edge", "I"),
+      };
 
-      cube.corners.UFL.U = cube.corners.UBL.U;
-      cube.corners.UFL.F = cube.corners.UBL.L;
-      cube.corners.UFL.L = cube.corners.UBL.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "D",
+        getStickerColour(cube, "corner", "A")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "I",
+        getStickerColour(cube, "corner", "E")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "F",
+        getStickerColour(cube, "corner", "R")
+      );
 
-      cube.corners.UBL.U = cube.corners.UBR.U;
-      cube.corners.UBL.B = cube.corners.UBR.R;
-      cube.corners.UBL.L = cube.corners.UBR.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "A",
+        getStickerColour(cube, "corner", "B")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "R",
+        getStickerColour(cube, "corner", "N")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "E",
+        getStickerColour(cube, "corner", "Q")
+      );
 
-      cube.corners.UBR.U = cube.corners.UFR.U;
-      cube.corners.UBR.R = cube.corners.UFR.F;
-      cube.corners.UBR.B = cube.corners.UFR.R;
+      setStickerColour(
+        cube,
+        "corner",
+        "B",
+        getStickerColour(cube, "corner", "C")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "N",
+        getStickerColour(cube, "corner", "J")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "Q",
+        getStickerColour(cube, "corner", "M")
+      );
 
-      cube.corners.UFR.U = tempCorner.U;
-      cube.corners.UFR.F = tempCorner.L;
-      cube.corners.UFR.R = tempCorner.F;
+      setStickerColour(cube, "corner", "C", tempCorner.D);
+      setStickerColour(cube, "corner", "J", tempCorner.F);
+      setStickerColour(cube, "corner", "M", tempCorner.I);
 
-      cube.edges.UF.U = cube.edges.UL.U;
-      cube.edges.UF.F = cube.edges.UL.L;
+      setStickerColour(cube, "edge", "C", getStickerColour(cube, "edge", "D"));
+      setStickerColour(cube, "edge", "I", getStickerColour(cube, "edge", "E"));
 
-      cube.edges.UL.U = cube.edges.UB.U;
-      cube.edges.UL.L = cube.edges.UB.B;
+      setStickerColour(cube, "edge", "D", getStickerColour(cube, "edge", "A"));
+      setStickerColour(cube, "edge", "E", getStickerColour(cube, "edge", "Q"));
 
-      cube.edges.UB.U = cube.edges.UR.U;
-      cube.edges.UB.B = cube.edges.UR.R;
+      setStickerColour(cube, "edge", "A", getStickerColour(cube, "edge", "B"));
+      setStickerColour(cube, "edge", "Q", getStickerColour(cube, "edge", "M"));
 
-      cube.edges.UR.U = tempEdge.U;
-      cube.edges.UR.R = tempEdge.F;
+      setStickerColour(cube, "edge", "B", tempEdge.C);
+      setStickerColour(cube, "edge", "M", tempEdge.I);
 
       break;
     }
 
     case "D": {
-      const tempCorner = { ...cube.corners.DFR };
-      const tempEdge = { ...cube.edges.DF };
+      const tempCorner = {
+        V: getStickerColour(cube, "corner", "V"),
+        K: getStickerColour(cube, "corner", "K"),
+        P: getStickerColour(cube, "corner", "P"),
+      };
+      const tempEdge = {
+        U: getStickerColour(cube, "edge", "U"),
+        K: getStickerColour(cube, "edge", "K"),
+      };
 
-      cube.corners.DFR.D = cube.corners.DFL.D;
-      cube.corners.DFR.F = cube.corners.DFL.L;
-      cube.corners.DFR.R = cube.corners.DFL.F;
+      setStickerColour(
+        cube,
+        "corner",
+        "V",
+        getStickerColour(cube, "corner", "U")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "K",
+        getStickerColour(cube, "corner", "G")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "P",
+        getStickerColour(cube, "corner", "L")
+      );
 
-      cube.corners.DFL.D = cube.corners.DBL.D;
-      cube.corners.DFL.F = cube.corners.DBL.L;
-      cube.corners.DFL.L = cube.corners.DBL.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "U",
+        getStickerColour(cube, "corner", "X")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "L",
+        getStickerColour(cube, "corner", "H")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "G",
+        getStickerColour(cube, "corner", "S")
+      );
 
-      cube.corners.DBL.D = cube.corners.DBR.D;
-      cube.corners.DBL.B = cube.corners.DBR.R;
-      cube.corners.DBL.L = cube.corners.DBR.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "X",
+        getStickerColour(cube, "corner", "W")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "S",
+        getStickerColour(cube, "corner", "O")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "H",
+        getStickerColour(cube, "corner", "T")
+      );
 
-      cube.corners.DBR.D = tempCorner.D;
-      cube.corners.DBR.B = tempCorner.R;
-      cube.corners.DBR.R = tempCorner.F;
+      setStickerColour(cube, "corner", "W", tempCorner.V);
+      setStickerColour(cube, "corner", "T", tempCorner.P);
+      setStickerColour(cube, "corner", "O", tempCorner.K);
 
-      cube.edges.DF.D = cube.edges.DL.D;
-      cube.edges.DF.F = cube.edges.DL.L;
+      setStickerColour(cube, "edge", "U", getStickerColour(cube, "edge", "X"));
+      setStickerColour(cube, "edge", "K", getStickerColour(cube, "edge", "G"));
 
-      cube.edges.DL.D = cube.edges.DB.D;
-      cube.edges.DL.L = cube.edges.DB.B;
+      setStickerColour(cube, "edge", "X", getStickerColour(cube, "edge", "W"));
+      setStickerColour(cube, "edge", "G", getStickerColour(cube, "edge", "S"));
 
-      cube.edges.DB.D = cube.edges.DR.D;
-      cube.edges.DB.B = cube.edges.DR.R;
+      setStickerColour(cube, "edge", "W", getStickerColour(cube, "edge", "V"));
+      setStickerColour(cube, "edge", "S", getStickerColour(cube, "edge", "O"));
 
-      cube.edges.DR.D = tempEdge.D;
-      cube.edges.DR.R = tempEdge.F;
+      setStickerColour(cube, "edge", "V", tempEdge.U);
+      setStickerColour(cube, "edge", "O", tempEdge.K);
 
       break;
     }
 
     case "D'": {
-      const tempCorner = { ...cube.corners.DFR };
-      const tempEdge = { ...cube.edges.DF };
+      const tempCorner = {
+        V: getStickerColour(cube, "corner", "V"),
+        K: getStickerColour(cube, "corner", "K"),
+        P: getStickerColour(cube, "corner", "P"),
+      };
+      const tempEdge = {
+        U: getStickerColour(cube, "edge", "U"),
+        K: getStickerColour(cube, "edge", "K"),
+      };
 
-      cube.corners.DFR.D = cube.corners.DBR.D;
-      cube.corners.DFR.F = cube.corners.DBR.R;
-      cube.corners.DFR.R = cube.corners.DBR.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "V",
+        getStickerColour(cube, "corner", "W")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "K",
+        getStickerColour(cube, "corner", "O")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "P",
+        getStickerColour(cube, "corner", "T")
+      );
 
-      cube.corners.DBR.D = cube.corners.DBL.D;
-      cube.corners.DBR.B = cube.corners.DBL.L;
-      cube.corners.DBR.R = cube.corners.DBL.B;
+      setStickerColour(
+        cube,
+        "corner",
+        "W",
+        getStickerColour(cube, "corner", "X")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "T",
+        getStickerColour(cube, "corner", "H")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "O",
+        getStickerColour(cube, "corner", "S")
+      );
 
-      cube.corners.DBL.D = cube.corners.DFL.D;
-      cube.corners.DBL.B = cube.corners.DFL.L;
-      cube.corners.DBL.L = cube.corners.DFL.F;
+      setStickerColour(
+        cube,
+        "corner",
+        "X",
+        getStickerColour(cube, "corner", "U")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "S",
+        getStickerColour(cube, "corner", "G")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "H",
+        getStickerColour(cube, "corner", "L")
+      );
 
-      cube.corners.DFL.D = tempCorner.D;
-      cube.corners.DFL.F = tempCorner.R;
-      cube.corners.DFL.L = tempCorner.F;
+      setStickerColour(cube, "corner", "U", tempCorner.V);
+      setStickerColour(cube, "corner", "L", tempCorner.P);
+      setStickerColour(cube, "corner", "G", tempCorner.K);
 
-      cube.edges.DF.D = cube.edges.DR.D;
-      cube.edges.DF.F = cube.edges.DR.R;
+      setStickerColour(cube, "edge", "U", getStickerColour(cube, "edge", "V"));
+      setStickerColour(cube, "edge", "K", getStickerColour(cube, "edge", "O"));
 
-      cube.edges.DR.D = cube.edges.DB.D;
-      cube.edges.DR.R = cube.edges.DB.B;
+      setStickerColour(cube, "edge", "V", getStickerColour(cube, "edge", "W"));
+      setStickerColour(cube, "edge", "O", getStickerColour(cube, "edge", "S"));
 
-      cube.edges.DB.D = cube.edges.DL.D;
-      cube.edges.DB.B = cube.edges.DL.L;
+      setStickerColour(cube, "edge", "W", getStickerColour(cube, "edge", "X"));
+      setStickerColour(cube, "edge", "S", getStickerColour(cube, "edge", "G"));
 
-      cube.edges.DL.D = tempEdge.D;
-      cube.edges.DL.L = tempEdge.F;
+      setStickerColour(cube, "edge", "X", tempEdge.U);
+      setStickerColour(cube, "edge", "G", tempEdge.K);
 
       break;
     }
 
     case "F": {
-      const tempCorner = { ...cube.corners.UFR };
-      const tempEdge = { ...cube.edges.UF };
+      const tempCorner = {
+        C: getStickerColour(cube, "corner", "C"),
+        J: getStickerColour(cube, "corner", "J"),
+        M: getStickerColour(cube, "corner", "M"),
+      };
+      const tempEdge = {
+        C: getStickerColour(cube, "edge", "C"),
+        I: getStickerColour(cube, "edge", "I"),
+      };
 
-      cube.corners.UFR.U = cube.corners.UFL.L;
-      cube.corners.UFR.F = cube.corners.UFL.F;
-      cube.corners.UFR.R = cube.corners.UFL.U;
+      setStickerColour(
+        cube,
+        "corner",
+        "C",
+        getStickerColour(cube, "corner", "F")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "J",
+        getStickerColour(cube, "corner", "I")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "M",
+        getStickerColour(cube, "corner", "D")
+      );
 
-      cube.corners.UFL.U = cube.corners.DFL.L;
-      cube.corners.UFL.F = cube.corners.DFL.F;
-      cube.corners.UFL.L = cube.corners.DFL.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "D",
+        getStickerColour(cube, "corner", "G")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "I",
+        getStickerColour(cube, "corner", "L")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "F",
+        getStickerColour(cube, "corner", "U")
+      );
 
-      cube.corners.DFL.D = cube.corners.DFR.R;
-      cube.corners.DFL.F = cube.corners.DFR.F;
-      cube.corners.DFL.L = cube.corners.DFR.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "U",
+        getStickerColour(cube, "corner", "P")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "L",
+        getStickerColour(cube, "corner", "K")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "G",
+        getStickerColour(cube, "corner", "V")
+      );
 
-      cube.corners.DFR.D = tempCorner.R;
-      cube.corners.DFR.F = tempCorner.F;
-      cube.corners.DFR.R = tempCorner.U;
+      setStickerColour(cube, "corner", "V", tempCorner.M);
+      setStickerColour(cube, "corner", "K", tempCorner.J);
+      setStickerColour(cube, "corner", "P", tempCorner.C);
 
-      cube.edges.UF.U = cube.edges.FL.L;
-      cube.edges.UF.F = cube.edges.FL.F;
+      setStickerColour(cube, "edge", "C", getStickerColour(cube, "edge", "F"));
+      setStickerColour(cube, "edge", "I", getStickerColour(cube, "edge", "L"));
 
-      cube.edges.FL.F = cube.edges.DF.F;
-      cube.edges.FL.L = cube.edges.DF.D;
+      setStickerColour(cube, "edge", "L", getStickerColour(cube, "edge", "K"));
+      setStickerColour(cube, "edge", "F", getStickerColour(cube, "edge", "U"));
 
-      cube.edges.DF.D = cube.edges.FR.R;
-      cube.edges.DF.F = cube.edges.FR.F;
+      setStickerColour(cube, "edge", "U", getStickerColour(cube, "edge", "P"));
+      setStickerColour(cube, "edge", "K", getStickerColour(cube, "edge", "J"));
 
-      cube.edges.FR.F = tempEdge.F;
-      cube.edges.FR.R = tempEdge.U;
+      setStickerColour(cube, "edge", "J", tempEdge.I);
+      setStickerColour(cube, "edge", "P", tempEdge.C);
 
       break;
     }
 
     case "F'": {
-      const tempCorner = { ...cube.corners.UFR };
-      const tempEdge = { ...cube.edges.UF };
+      const tempCorner = {
+        C: getStickerColour(cube, "corner", "C"),
+        J: getStickerColour(cube, "corner", "J"),
+        M: getStickerColour(cube, "corner", "M"),
+      };
+      const tempEdge = {
+        C: getStickerColour(cube, "edge", "C"),
+        I: getStickerColour(cube, "edge", "I"),
+      };
 
-      cube.corners.UFR.U = cube.corners.DFR.R;
-      cube.corners.UFR.F = cube.corners.DFR.F;
-      cube.corners.UFR.R = cube.corners.DFR.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "C",
+        getStickerColour(cube, "corner", "P")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "J",
+        getStickerColour(cube, "corner", "K")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "M",
+        getStickerColour(cube, "corner", "V")
+      );
 
-      cube.corners.DFR.D = cube.corners.DFL.L;
-      cube.corners.DFR.F = cube.corners.DFL.F;
-      cube.corners.DFR.R = cube.corners.DFL.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "V",
+        getStickerColour(cube, "corner", "G")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "K",
+        getStickerColour(cube, "corner", "L")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "P",
+        getStickerColour(cube, "corner", "U")
+      );
 
-      cube.corners.DFL.D = cube.corners.UFL.L;
-      cube.corners.DFL.F = cube.corners.UFL.F;
-      cube.corners.DFL.L = cube.corners.UFL.U;
+      setStickerColour(
+        cube,
+        "corner",
+        "U",
+        getStickerColour(cube, "corner", "F")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "L",
+        getStickerColour(cube, "corner", "I")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "G",
+        getStickerColour(cube, "corner", "D")
+      );
 
-      cube.corners.UFL.U = tempCorner.R;
-      cube.corners.UFL.F = tempCorner.F;
-      cube.corners.UFL.L = tempCorner.U;
+      setStickerColour(cube, "corner", "D", tempCorner.M);
+      setStickerColour(cube, "corner", "I", tempCorner.J);
+      setStickerColour(cube, "corner", "F", tempCorner.C);
 
-      cube.edges.UF.U = cube.edges.FR.R;
-      cube.edges.UF.F = cube.edges.FR.F;
+      setStickerColour(cube, "edge", "C", getStickerColour(cube, "edge", "P"));
+      setStickerColour(cube, "edge", "I", getStickerColour(cube, "edge", "J"));
 
-      cube.edges.FR.F = cube.edges.DF.F;
-      cube.edges.FR.R = cube.edges.DF.D;
+      setStickerColour(cube, "edge", "J", getStickerColour(cube, "edge", "K"));
+      setStickerColour(cube, "edge", "P", getStickerColour(cube, "edge", "U"));
 
-      cube.edges.DF.D = cube.edges.FL.L;
-      cube.edges.DF.F = cube.edges.FL.F;
+      setStickerColour(cube, "edge", "U", getStickerColour(cube, "edge", "F"));
+      setStickerColour(cube, "edge", "K", getStickerColour(cube, "edge", "L"));
 
-      cube.edges.FL.F = tempEdge.F;
-      cube.edges.FL.L = tempEdge.U;
+      setStickerColour(cube, "edge", "L", tempEdge.I);
+      setStickerColour(cube, "edge", "F", tempEdge.C);
 
       break;
     }
 
     case "B": {
-      const tempCorner = { ...cube.corners.UBR };
-      const tempEdge = { ...cube.edges.UB };
+      const tempCorner = {
+        B: getStickerColour(cube, "corner", "B"),
+        Q: getStickerColour(cube, "corner", "Q"),
+        N: getStickerColour(cube, "corner", "N"),
+      };
+      const tempEdge = {
+        A: getStickerColour(cube, "edge", "A"),
+        Q: getStickerColour(cube, "edge", "Q"),
+      };
 
-      cube.corners.UBR.U = cube.corners.DBR.R;
-      cube.corners.UBR.B = cube.corners.DBR.B;
-      cube.corners.UBR.R = cube.corners.DBR.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "B",
+        getStickerColour(cube, "corner", "O")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "Q",
+        getStickerColour(cube, "corner", "T")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "N",
+        getStickerColour(cube, "corner", "W")
+      );
 
-      cube.corners.DBR.D = cube.corners.DBL.L;
-      cube.corners.DBR.B = cube.corners.DBL.B;
-      cube.corners.DBR.R = cube.corners.DBL.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "W",
+        getStickerColour(cube, "corner", "H")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "T",
+        getStickerColour(cube, "corner", "S")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "O",
+        getStickerColour(cube, "corner", "X")
+      );
 
-      cube.corners.DBL.D = cube.corners.UBL.L;
-      cube.corners.DBL.B = cube.corners.UBL.B;
-      cube.corners.DBL.L = cube.corners.UBL.U;
+      setStickerColour(
+        cube,
+        "corner",
+        "X",
+        getStickerColour(cube, "corner", "E")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "S",
+        getStickerColour(cube, "corner", "R")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "H",
+        getStickerColour(cube, "corner", "A")
+      );
 
-      cube.corners.UBL.U = tempCorner.R;
-      cube.corners.UBL.B = tempCorner.B;
-      cube.corners.UBL.L = tempCorner.U;
+      setStickerColour(cube, "corner", "A", tempCorner.N);
+      setStickerColour(cube, "corner", "R", tempCorner.Q);
+      setStickerColour(cube, "corner", "E", tempCorner.B);
 
-      cube.edges.UB.U = cube.edges.BR.R;
-      cube.edges.UB.B = cube.edges.BR.B;
+      setStickerColour(cube, "edge", "A", getStickerColour(cube, "edge", "N"));
+      setStickerColour(cube, "edge", "Q", getStickerColour(cube, "edge", "T"));
 
-      cube.edges.BR.B = cube.edges.DB.B;
-      cube.edges.BR.R = cube.edges.DB.D;
+      setStickerColour(cube, "edge", "T", getStickerColour(cube, "edge", "S"));
+      setStickerColour(cube, "edge", "N", getStickerColour(cube, "edge", "W"));
 
-      cube.edges.DB.D = cube.edges.BL.L;
-      cube.edges.DB.B = cube.edges.BL.B;
+      setStickerColour(cube, "edge", "W", getStickerColour(cube, "edge", "H"));
+      setStickerColour(cube, "edge", "S", getStickerColour(cube, "edge", "R"));
 
-      cube.edges.BL.B = tempEdge.B;
-      cube.edges.BL.L = tempEdge.U;
+      setStickerColour(cube, "edge", "R", tempEdge.Q);
+      setStickerColour(cube, "edge", "H", tempEdge.A);
 
       break;
     }
 
     case "B'": {
-      const tempCorner = { ...cube.corners.UBR };
-      const tempEdge = { ...cube.edges.UB };
+      const tempCorner = {
+        B: getStickerColour(cube, "corner", "B"),
+        Q: getStickerColour(cube, "corner", "Q"),
+        N: getStickerColour(cube, "corner", "N"),
+      };
+      const tempEdge = {
+        A: getStickerColour(cube, "edge", "A"),
+        Q: getStickerColour(cube, "edge", "Q"),
+      };
 
-      cube.corners.UBR.U = cube.corners.UBL.L;
-      cube.corners.UBR.B = cube.corners.UBL.B;
-      cube.corners.UBR.R = cube.corners.UBL.U;
+      setStickerColour(
+        cube,
+        "corner",
+        "B",
+        getStickerColour(cube, "corner", "E")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "Q",
+        getStickerColour(cube, "corner", "R")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "N",
+        getStickerColour(cube, "corner", "A")
+      );
 
-      cube.corners.UBL.U = cube.corners.DBL.L;
-      cube.corners.UBL.B = cube.corners.DBL.B;
-      cube.corners.UBL.L = cube.corners.DBL.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "A",
+        getStickerColour(cube, "corner", "H")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "R",
+        getStickerColour(cube, "corner", "S")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "E",
+        getStickerColour(cube, "corner", "X")
+      );
 
-      cube.corners.DBL.D = cube.corners.DBR.R;
-      cube.corners.DBL.B = cube.corners.DBR.B;
-      cube.corners.DBL.L = cube.corners.DBR.D;
+      setStickerColour(
+        cube,
+        "corner",
+        "X",
+        getStickerColour(cube, "corner", "O")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "S",
+        getStickerColour(cube, "corner", "T")
+      );
+      setStickerColour(
+        cube,
+        "corner",
+        "H",
+        getStickerColour(cube, "corner", "W")
+      );
 
-      cube.corners.DBR.D = tempCorner.R;
-      cube.corners.DBR.B = tempCorner.B;
-      cube.corners.DBR.R = tempCorner.U;
+      setStickerColour(cube, "corner", "W", tempCorner.N);
+      setStickerColour(cube, "corner", "T", tempCorner.Q);
+      setStickerColour(cube, "corner", "O", tempCorner.B);
 
-      cube.edges.UB.U = cube.edges.BL.L;
-      cube.edges.UB.B = cube.edges.BL.B;
+      setStickerColour(cube, "edge", "A", getStickerColour(cube, "edge", "H"));
+      setStickerColour(cube, "edge", "Q", getStickerColour(cube, "edge", "R"));
 
-      cube.edges.BL.B = cube.edges.DB.B;
-      cube.edges.BL.L = cube.edges.DB.D;
+      setStickerColour(cube, "edge", "R", getStickerColour(cube, "edge", "S"));
+      setStickerColour(cube, "edge", "H", getStickerColour(cube, "edge", "W"));
 
-      cube.edges.DB.D = cube.edges.BR.R;
-      cube.edges.DB.B = cube.edges.BR.B;
+      setStickerColour(cube, "edge", "W", getStickerColour(cube, "edge", "N"));
+      setStickerColour(cube, "edge", "S", getStickerColour(cube, "edge", "T"));
 
-      cube.edges.BR.B = tempEdge.B;
-      cube.edges.BR.R = tempEdge.U;
+      setStickerColour(cube, "edge", "T", tempEdge.Q);
+      setStickerColour(cube, "edge", "N", tempEdge.A);
 
       break;
     }
 
     // M follows L
     case "M": {
-      const tempEdge = { ...cube.edges.UF };
-      const tempCenter = cube.centers.U;
+      const tempEdge = {
+        C: getStickerColour(cube, "edge", "C"),
+        I: getStickerColour(cube, "edge", "I"),
+      };
+      const tempCenter = getStickerColour(cube, "center", "U");
 
-      cube.edges.UF.U = cube.edges.UB.B;
-      cube.edges.UF.F = cube.edges.UB.U;
+      setStickerColour(cube, "edge", "C", getStickerColour(cube, "edge", "Q"));
+      setStickerColour(cube, "edge", "I", getStickerColour(cube, "edge", "A"));
 
-      cube.edges.UB.U = cube.edges.DB.B;
-      cube.edges.UB.B = cube.edges.DB.D;
+      setStickerColour(cube, "edge", "A", getStickerColour(cube, "edge", "S"));
+      setStickerColour(cube, "edge", "Q", getStickerColour(cube, "edge", "W"));
 
-      cube.edges.DB.D = cube.edges.DF.F;
-      cube.edges.DB.B = cube.edges.DF.D;
+      setStickerColour(cube, "edge", "W", getStickerColour(cube, "edge", "K"));
+      setStickerColour(cube, "edge", "S", getStickerColour(cube, "edge", "U"));
 
-      cube.edges.DF.D = tempEdge.F;
-      cube.edges.DF.F = tempEdge.U;
+      setStickerColour(cube, "edge", "U", tempEdge.I);
+      setStickerColour(cube, "edge", "K", tempEdge.C);
 
-      cube.centers.U = cube.centers.B;
-      cube.centers.B = cube.centers.D;
-      cube.centers.D = cube.centers.F;
-      cube.centers.F = tempCenter;
+      setStickerColour(
+        cube,
+        "center",
+        "U",
+        getStickerColour(cube, "center", "B")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "B",
+        getStickerColour(cube, "center", "D")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "D",
+        getStickerColour(cube, "center", "F")
+      );
+      setStickerColour(cube, "center", "F", tempCenter);
 
       break;
     }
 
     case "M'": {
-      const tempEdge = { ...cube.edges.UF };
-      const tempCenter = cube.centers.U;
+      const tempEdge = {
+        C: getStickerColour(cube, "edge", "C"),
+        I: getStickerColour(cube, "edge", "I"),
+      };
+      const tempCenter = getStickerColour(cube, "center", "U");
 
-      cube.edges.UF.U = cube.edges.DF.F;
-      cube.edges.UF.F = cube.edges.DF.D;
+      setStickerColour(cube, "edge", "C", getStickerColour(cube, "edge", "K"));
+      setStickerColour(cube, "edge", "I", getStickerColour(cube, "edge", "U"));
 
-      cube.edges.DF.D = cube.edges.DB.B;
-      cube.edges.DF.F = cube.edges.DB.D;
+      setStickerColour(cube, "edge", "U", getStickerColour(cube, "edge", "S"));
+      setStickerColour(cube, "edge", "K", getStickerColour(cube, "edge", "W"));
 
-      cube.edges.DB.D = cube.edges.UB.B;
-      cube.edges.DB.B = cube.edges.UB.U;
+      setStickerColour(cube, "edge", "W", getStickerColour(cube, "edge", "Q"));
+      setStickerColour(cube, "edge", "S", getStickerColour(cube, "edge", "A"));
 
-      cube.edges.UB.U = tempEdge.F;
-      cube.edges.UB.B = tempEdge.U;
+      setStickerColour(cube, "edge", "A", tempEdge.I);
+      setStickerColour(cube, "edge", "Q", tempEdge.C);
 
-      cube.centers.U = cube.centers.F;
-      cube.centers.F = cube.centers.D;
-      cube.centers.D = cube.centers.B;
-      cube.centers.B = tempCenter;
+      setStickerColour(
+        cube,
+        "center",
+        "U",
+        getStickerColour(cube, "center", "F")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "F",
+        getStickerColour(cube, "center", "D")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "D",
+        getStickerColour(cube, "center", "B")
+      );
+      setStickerColour(cube, "center", "B", tempCenter);
 
       break;
     }
 
     // S follows F
     case "S": {
-      const tempEdge = { ...cube.edges.UR };
-      const tempCenter = cube.centers.U;
+      const tempEdge = {
+        B: getStickerColour(cube, "edge", "B"),
+        M: getStickerColour(cube, "edge", "M"),
+      };
+      const tempCenter = getStickerColour(cube, "center", "U");
 
-      cube.edges.UR.U = cube.edges.UL.L;
-      cube.edges.UR.R = cube.edges.UL.U;
+      setStickerColour(cube, "edge", "B", getStickerColour(cube, "edge", "E"));
+      setStickerColour(cube, "edge", "M", getStickerColour(cube, "edge", "D"));
 
-      cube.edges.UL.U = cube.edges.DL.L;
-      cube.edges.UL.L = cube.edges.DL.D;
+      setStickerColour(cube, "edge", "D", getStickerColour(cube, "edge", "G"));
+      setStickerColour(cube, "edge", "E", getStickerColour(cube, "edge", "X"));
 
-      cube.edges.DL.D = cube.edges.DR.R;
-      cube.edges.DL.L = cube.edges.DR.D;
+      setStickerColour(cube, "edge", "X", getStickerColour(cube, "edge", "O"));
+      setStickerColour(cube, "edge", "G", getStickerColour(cube, "edge", "V"));
 
-      cube.edges.DR.D = tempEdge.R;
-      cube.edges.DR.R = tempEdge.U;
+      setStickerColour(cube, "edge", "V", tempEdge.M);
+      setStickerColour(cube, "edge", "O", tempEdge.B);
 
-      cube.centers.U = cube.centers.L;
-      cube.centers.L = cube.centers.D;
-      cube.centers.D = cube.centers.R;
-      cube.centers.R = tempCenter;
+      setStickerColour(
+        cube,
+        "center",
+        "U",
+        getStickerColour(cube, "center", "L")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "L",
+        getStickerColour(cube, "center", "D")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "D",
+        getStickerColour(cube, "center", "R")
+      );
+      setStickerColour(cube, "center", "R", tempCenter);
 
       break;
     }
 
     case "S'": {
-      const tempEdge = { ...cube.edges.UR };
-      const tempCenter = cube.centers.U;
+      const tempEdge = {
+        B: getStickerColour(cube, "edge", "B"),
+        M: getStickerColour(cube, "edge", "M"),
+      };
+      const tempCenter = getStickerColour(cube, "center", "U");
 
-      cube.edges.UR.U = cube.edges.DR.R;
-      cube.edges.UR.R = cube.edges.DR.D;
+      setStickerColour(cube, "edge", "B", getStickerColour(cube, "edge", "O"));
+      setStickerColour(cube, "edge", "M", getStickerColour(cube, "edge", "V"));
 
-      cube.edges.DR.D = cube.edges.DL.L;
-      cube.edges.DR.R = cube.edges.DL.D;
+      setStickerColour(cube, "edge", "V", getStickerColour(cube, "edge", "G"));
+      setStickerColour(cube, "edge", "O", getStickerColour(cube, "edge", "X"));
 
-      cube.edges.DL.D = cube.edges.UL.L;
-      cube.edges.DL.L = cube.edges.UL.U;
+      setStickerColour(cube, "edge", "X", getStickerColour(cube, "edge", "E"));
+      setStickerColour(cube, "edge", "G", getStickerColour(cube, "edge", "D"));
 
-      cube.edges.UL.U = tempEdge.R;
-      cube.edges.UL.L = tempEdge.U;
+      setStickerColour(cube, "edge", "D", tempEdge.M);
+      setStickerColour(cube, "edge", "E", tempEdge.B);
 
-      cube.centers.U = cube.centers.R;
-      cube.centers.R = cube.centers.D;
-      cube.centers.D = cube.centers.L;
-      cube.centers.L = tempCenter;
+      setStickerColour(
+        cube,
+        "center",
+        "U",
+        getStickerColour(cube, "center", "R")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "R",
+        getStickerColour(cube, "center", "D")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "D",
+        getStickerColour(cube, "center", "L")
+      );
+      setStickerColour(cube, "center", "L", tempCenter);
 
       break;
     }
 
     // E follows D
     case "E": {
-      const tempEdge = { ...cube.edges.FR };
-      const tempCenter = cube.centers.F;
+      const tempEdge = {
+        J: getStickerColour(cube, "edge", "J"),
+        P: getStickerColour(cube, "edge", "P"),
+      };
+      const tempCenter = getStickerColour(cube, "center", "F");
 
-      cube.edges.FR.F = cube.edges.FL.L;
-      cube.edges.FR.R = cube.edges.FL.F;
+      setStickerColour(cube, "edge", "J", getStickerColour(cube, "edge", "F"));
+      setStickerColour(cube, "edge", "P", getStickerColour(cube, "edge", "L"));
 
-      cube.edges.FL.F = cube.edges.BL.L;
-      cube.edges.FL.L = cube.edges.BL.B;
+      setStickerColour(cube, "edge", "L", getStickerColour(cube, "edge", "H"));
+      setStickerColour(cube, "edge", "F", getStickerColour(cube, "edge", "R"));
 
-      cube.edges.BL.B = cube.edges.BR.R;
-      cube.edges.BL.L = cube.edges.BR.B;
+      setStickerColour(cube, "edge", "R", getStickerColour(cube, "edge", "N"));
+      setStickerColour(cube, "edge", "H", getStickerColour(cube, "edge", "T"));
 
-      cube.edges.BR.B = tempEdge.R;
-      cube.edges.BR.R = tempEdge.F;
+      setStickerColour(cube, "edge", "T", tempEdge.P);
+      setStickerColour(cube, "edge", "N", tempEdge.J);
 
-      cube.centers.F = cube.centers.L;
-      cube.centers.L = cube.centers.B;
-      cube.centers.B = cube.centers.R;
-      cube.centers.R = tempCenter;
+      setStickerColour(
+        cube,
+        "center",
+        "F",
+        getStickerColour(cube, "center", "L")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "L",
+        getStickerColour(cube, "center", "B")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "B",
+        getStickerColour(cube, "center", "R")
+      );
+      setStickerColour(cube, "center", "R", tempCenter);
 
       break;
     }
 
     case "E'": {
-      const tempEdge = { ...cube.edges.FR };
-      const tempCenter = cube.centers.F;
+      const tempEdge = {
+        J: getStickerColour(cube, "edge", "J"),
+        P: getStickerColour(cube, "edge", "P"),
+      };
+      const tempCenter = getStickerColour(cube, "center", "F");
 
-      cube.edges.FR.F = cube.edges.BR.R;
-      cube.edges.FR.R = cube.edges.BR.B;
+      setStickerColour(cube, "edge", "J", getStickerColour(cube, "edge", "N"));
+      setStickerColour(cube, "edge", "P", getStickerColour(cube, "edge", "T"));
 
-      cube.edges.BR.B = cube.edges.BL.L;
-      cube.edges.BR.R = cube.edges.BL.B;
+      setStickerColour(cube, "edge", "T", getStickerColour(cube, "edge", "H"));
+      setStickerColour(cube, "edge", "N", getStickerColour(cube, "edge", "R"));
 
-      cube.edges.BL.B = cube.edges.FL.L;
-      cube.edges.BL.L = cube.edges.FL.F;
+      setStickerColour(cube, "edge", "R", getStickerColour(cube, "edge", "F"));
+      setStickerColour(cube, "edge", "H", getStickerColour(cube, "edge", "L"));
 
-      cube.edges.FL.F = tempEdge.R;
-      cube.edges.FL.L = tempEdge.F;
+      setStickerColour(cube, "edge", "L", tempEdge.P);
+      setStickerColour(cube, "edge", "F", tempEdge.J);
 
-      cube.centers.F = cube.centers.R;
-      cube.centers.R = cube.centers.B;
-      cube.centers.B = cube.centers.L;
-      cube.centers.L = tempCenter;
+      setStickerColour(
+        cube,
+        "center",
+        "F",
+        getStickerColour(cube, "center", "R")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "R",
+        getStickerColour(cube, "center", "B")
+      );
+      setStickerColour(
+        cube,
+        "center",
+        "B",
+        getStickerColour(cube, "center", "L")
+      );
+      setStickerColour(cube, "center", "L", tempCenter);
 
       break;
     }
@@ -970,401 +1728,401 @@ export function getStickerColour(
   if (pieceType === "corner") {
     switch (letter) {
       case "A":
-        return cube.corners.UBL.U;
+        return cube.corners.UBL.U.colour;
 
       case "B":
-        return cube.corners.UBR.U;
+        return cube.corners.UBR.U.colour;
 
       case "C":
-        return cube.corners.UFR.U;
+        return cube.corners.UFR.U.colour;
 
       case "D":
-        return cube.corners.UFL.U;
+        return cube.corners.UFL.U.colour;
 
       case "E":
-        return cube.corners.UBL.L;
+        return cube.corners.UBL.L.colour;
 
       case "F":
-        return cube.corners.UFL.L;
+        return cube.corners.UFL.L.colour;
 
       case "G":
-        return cube.corners.DFL.L;
+        return cube.corners.DFL.L.colour;
 
       case "H":
-        return cube.corners.DBL.L;
+        return cube.corners.DBL.L.colour;
 
       case "I":
-        return cube.corners.UFL.F;
+        return cube.corners.UFL.F.colour;
 
       case "J":
-        return cube.corners.UFR.F;
+        return cube.corners.UFR.F.colour;
 
       case "K":
-        return cube.corners.DFR.F;
+        return cube.corners.DFR.F.colour;
 
       case "L":
-        return cube.corners.DFL.F;
+        return cube.corners.DFL.F.colour;
 
       case "M":
-        return cube.corners.UFR.R;
+        return cube.corners.UFR.R.colour;
 
       case "N":
-        return cube.corners.UBR.R;
+        return cube.corners.UBR.R.colour;
 
       case "O":
-        return cube.corners.DBR.R;
+        return cube.corners.DBR.R.colour;
 
       case "P":
-        return cube.corners.DFR.R;
+        return cube.corners.DFR.R.colour;
 
       case "Q":
-        return cube.corners.UBR.B;
+        return cube.corners.UBR.B.colour;
 
       case "R":
-        return cube.corners.UBL.B;
+        return cube.corners.UBL.B.colour;
 
       case "S":
-        return cube.corners.DBL.B;
+        return cube.corners.DBL.B.colour;
 
       case "T":
-        return cube.corners.DBR.B;
+        return cube.corners.DBR.B.colour;
 
       case "U":
-        return cube.corners.DFL.D;
+        return cube.corners.DFL.D.colour;
 
       case "V":
-        return cube.corners.DFR.D;
+        return cube.corners.DFR.D.colour;
 
       case "W":
-        return cube.corners.DBR.D;
+        return cube.corners.DBR.D.colour;
 
       case "X":
-        return cube.corners.DBL.D;
+        return cube.corners.DBL.D.colour;
     }
   } else if (pieceType === "edge") {
     switch (letter) {
       case "A":
-        return cube.edges.UB.U;
+        return cube.edges.UB.U.colour;
 
       case "B":
-        return cube.edges.UR.U;
+        return cube.edges.UR.U.colour;
 
       case "C":
-        return cube.edges.UF.U;
+        return cube.edges.UF.U.colour;
 
       case "D":
-        return cube.edges.UL.U;
+        return cube.edges.UL.U.colour;
 
       case "E":
-        return cube.edges.UL.L;
+        return cube.edges.UL.L.colour;
 
       case "F":
-        return cube.edges.FL.L;
+        return cube.edges.FL.L.colour;
 
       case "G":
-        return cube.edges.DL.L;
+        return cube.edges.DL.L.colour;
 
       case "H":
-        return cube.edges.BL.L;
+        return cube.edges.BL.L.colour;
 
       case "I":
-        return cube.edges.UF.F;
+        return cube.edges.UF.F.colour;
 
       case "J":
-        return cube.edges.FR.F;
+        return cube.edges.FR.F.colour;
 
       case "K":
-        return cube.edges.DF.F;
+        return cube.edges.DF.F.colour;
 
       case "L":
-        return cube.edges.FL.F;
+        return cube.edges.FL.F.colour;
 
       case "M":
-        return cube.edges.UR.R;
+        return cube.edges.UR.R.colour;
 
       case "N":
-        return cube.edges.BR.R;
+        return cube.edges.BR.R.colour;
 
       case "O":
-        return cube.edges.DR.R;
+        return cube.edges.DR.R.colour;
 
       case "P":
-        return cube.edges.FR.R;
+        return cube.edges.FR.R.colour;
 
       case "Q":
-        return cube.edges.UB.B;
+        return cube.edges.UB.B.colour;
 
       case "R":
-        return cube.edges.BL.B;
+        return cube.edges.BL.B.colour;
 
       case "S":
-        return cube.edges.DB.B;
+        return cube.edges.DB.B.colour;
 
       case "T":
-        return cube.edges.BR.B;
+        return cube.edges.BR.B.colour;
 
       case "U":
-        return cube.edges.DF.D;
+        return cube.edges.DF.D.colour;
 
       case "V":
-        return cube.edges.DR.D;
+        return cube.edges.DR.D.colour;
 
       case "W":
-        return cube.edges.DB.D;
+        return cube.edges.DB.D.colour;
 
       case "X":
-        return cube.edges.DL.D;
+        return cube.edges.DL.D.colour;
     }
   } else if (pieceType === "center") {
     switch (letter) {
       case "U":
-        return cube.centers.U;
+        return cube.centers.U.colour;
 
       case "D":
-        return cube.centers.D;
+        return cube.centers.D.colour;
 
       case "F":
-        return cube.centers.F;
+        return cube.centers.F.colour;
 
       case "B":
-        return cube.centers.B;
+        return cube.centers.B.colour;
 
       case "R":
-        return cube.centers.R;
+        return cube.centers.R.colour;
 
       case "L":
-        return cube.centers.L;
+        return cube.centers.L.colour;
     }
   }
-  throw new Error("Invalid letter");
+  throw new Error(`Invalid letter: ${letter}`);
 }
 
 export function setStickerColour(
   cube: Cube,
   pieceType: "corner" | "edge" | "center",
-  letter: string,
+  letter: ValidStickerLetter,
   colour: CubeColour
 ) {
   if (pieceType === "corner") {
     switch (letter) {
       case "A":
-        cube.corners.UBL.U = colour;
+        cube.corners.UBL.U.colour = colour;
         return cube;
 
       case "B":
-        cube.corners.UBR.U = colour;
+        cube.corners.UBR.U.colour = colour;
         return cube;
 
       case "C":
-        cube.corners.UFR.U = colour;
+        cube.corners.UFR.U.colour = colour;
         return cube;
 
       case "D":
-        cube.corners.UFL.U = colour;
+        cube.corners.UFL.U.colour = colour;
         return cube;
 
       case "E":
-        cube.corners.UBL.L = colour;
+        cube.corners.UBL.L.colour = colour;
         return cube;
 
       case "F":
-        cube.corners.UFL.L = colour;
+        cube.corners.UFL.L.colour = colour;
         return cube;
 
       case "G":
-        cube.corners.DFL.L = colour;
+        cube.corners.DFL.L.colour = colour;
         return cube;
 
       case "H":
-        cube.corners.DBL.L = colour;
+        cube.corners.DBL.L.colour = colour;
         return cube;
 
       case "I":
-        cube.corners.UFL.F = colour;
+        cube.corners.UFL.F.colour = colour;
         return cube;
 
       case "J":
-        cube.corners.UFR.F = colour;
+        cube.corners.UFR.F.colour = colour;
         return cube;
 
       case "K":
-        cube.corners.DFR.F = colour;
+        cube.corners.DFR.F.colour = colour;
         return cube;
 
       case "L":
-        cube.corners.DFL.F = colour;
+        cube.corners.DFL.F.colour = colour;
         return cube;
 
       case "M":
-        cube.corners.UFR.R = colour;
+        cube.corners.UFR.R.colour = colour;
         return cube;
 
       case "N":
-        cube.corners.UBR.R = colour;
+        cube.corners.UBR.R.colour = colour;
         return cube;
 
       case "O":
-        cube.corners.DBR.R = colour;
+        cube.corners.DBR.R.colour = colour;
         return cube;
 
       case "P":
-        cube.corners.DFR.R = colour;
+        cube.corners.DFR.R.colour = colour;
         return cube;
 
       case "Q":
-        cube.corners.UBR.B = colour;
+        cube.corners.UBR.B.colour = colour;
         return cube;
 
       case "R":
-        cube.corners.UBL.B = colour;
+        cube.corners.UBL.B.colour = colour;
         return cube;
 
       case "S":
-        cube.corners.DBL.B = colour;
+        cube.corners.DBL.B.colour = colour;
         return cube;
 
       case "T":
-        cube.corners.DBR.B = colour;
+        cube.corners.DBR.B.colour = colour;
         return cube;
 
       case "U":
-        cube.corners.DFL.D = colour;
+        cube.corners.DFL.D.colour = colour;
         return cube;
 
       case "V":
-        cube.corners.DFR.D = colour;
+        cube.corners.DFR.D.colour = colour;
         return cube;
 
       case "W":
-        cube.corners.DBR.D = colour;
+        cube.corners.DBR.D.colour = colour;
         return cube;
 
       case "X":
-        cube.corners.DBL.D = colour;
+        cube.corners.DBL.D.colour = colour;
         return cube;
     }
   } else if (pieceType === "edge") {
     switch (letter) {
       case "A":
-        cube.edges.UB.U = colour;
+        cube.edges.UB.U.colour = colour;
         return cube;
 
       case "B":
-        cube.edges.UR.U = colour;
+        cube.edges.UR.U.colour = colour;
         return cube;
 
       case "C":
-        cube.edges.UF.U = colour;
+        cube.edges.UF.U.colour = colour;
         return cube;
 
       case "D":
-        cube.edges.UL.U = colour;
+        cube.edges.UL.U.colour = colour;
         return cube;
 
       case "E":
-        cube.edges.UL.L = colour;
+        cube.edges.UL.L.colour = colour;
         return cube;
 
       case "F":
-        cube.edges.FL.L = colour;
+        cube.edges.FL.L.colour = colour;
         return cube;
 
       case "G":
-        cube.edges.DL.L = colour;
+        cube.edges.DL.L.colour = colour;
         return cube;
 
       case "H":
-        cube.edges.BL.L = colour;
+        cube.edges.BL.L.colour = colour;
         return cube;
 
       case "I":
-        cube.edges.UF.F = colour;
+        cube.edges.UF.F.colour = colour;
         return cube;
 
       case "J":
-        cube.edges.FR.F = colour;
+        cube.edges.FR.F.colour = colour;
         return cube;
 
       case "K":
-        cube.edges.DF.F = colour;
+        cube.edges.DF.F.colour = colour;
         return cube;
 
       case "L":
-        cube.edges.FL.F = colour;
+        cube.edges.FL.F.colour = colour;
         return cube;
 
       case "M":
-        cube.edges.UR.R = colour;
+        cube.edges.UR.R.colour = colour;
         return cube;
 
       case "N":
-        cube.edges.BR.R = colour;
+        cube.edges.BR.R.colour = colour;
         return cube;
 
       case "O":
-        cube.edges.DR.R = colour;
+        cube.edges.DR.R.colour = colour;
         return cube;
 
       case "P":
-        cube.edges.FR.R = colour;
+        cube.edges.FR.R.colour = colour;
         return cube;
 
       case "Q":
-        cube.edges.UB.B = colour;
+        cube.edges.UB.B.colour = colour;
         return cube;
 
       case "R":
-        cube.edges.BL.B = colour;
+        cube.edges.BL.B.colour = colour;
         return cube;
 
       case "S":
-        cube.edges.DB.B = colour;
+        cube.edges.DB.B.colour = colour;
         return cube;
 
       case "T":
-        cube.edges.BR.B = colour;
+        cube.edges.BR.B.colour = colour;
         return cube;
 
       case "U":
-        cube.edges.DF.D = colour;
+        cube.edges.DF.D.colour = colour;
         return cube;
 
       case "V":
-        cube.edges.DR.D = colour;
+        cube.edges.DR.D.colour = colour;
         return cube;
 
       case "W":
-        cube.edges.DB.D = colour;
+        cube.edges.DB.D.colour = colour;
         return cube;
 
       case "X":
-        cube.edges.DL.D = colour;
+        cube.edges.DL.D.colour = colour;
         return cube;
     }
   } else if (pieceType === "center") {
     switch (letter) {
       case "U":
-        cube.centers.U = colour;
+        cube.centers.U.colour = colour;
         return cube;
 
       case "D":
-        cube.centers.D = colour;
+        cube.centers.D.colour = colour;
         return cube;
 
       case "F":
-        cube.centers.F = colour;
+        cube.centers.F.colour = colour;
         return cube;
 
       case "B":
-        cube.centers.B = colour;
+        cube.centers.B.colour = colour;
         return cube;
 
       case "R":
-        cube.centers.R = colour;
+        cube.centers.R.colour = colour;
         return cube;
 
       case "L":
-        cube.centers.L = colour;
+        cube.centers.L.colour = colour;
         return cube;
     }
   }
@@ -1373,7 +2131,7 @@ export function setStickerColour(
 
 export function nextStickerClockwise(
   pieceType: "corner" | "edge",
-  letter: string
+  letter: ValidStickerLetter
 ) {
   if (pieceType === "corner") {
     switch (letter) {
@@ -1530,8 +2288,8 @@ export function nextStickerClockwise(
 export function swap(
   cube: Cube,
   pieceType: "corner" | "edge",
-  buffer: string,
-  letter: string
+  buffer: ValidStickerLetter,
+  letter: ValidStickerLetter
 ) {
   if (pieceType === "corner") {
     const bufferStickers = [
