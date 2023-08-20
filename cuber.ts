@@ -294,7 +294,7 @@ export function performAlg(cube: Cube, algorithm: string) {
     }
   }
 
-  return validMoveCount;
+  return cube;
 }
 
 export function turn(cube: Cube, move: string) {
