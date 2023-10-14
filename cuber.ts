@@ -6,7 +6,7 @@ export type CubeColour =
   | "red"
   | "orange";
 
-export type Cube = {
+export type CubeData = {
   corners: {
     UBL: {
       U: { colour: CubeColour; letter: "A"; sticker: null };
@@ -174,7 +174,7 @@ export type LegalMove =
   | "Z'";
 
 export function getSolvedCube() {
-  const solvedCube: Cube = {
+  const solvedCube: CubeData = {
     corners: {
       UBL: {
         U: { colour: "blue", letter: "A", sticker: null },
@@ -280,7 +280,7 @@ export function getSolvedCube() {
   return solvedCube;
 }
 
-export function performAlg(cube: Cube, algorithm: string) {
+export function performAlg(cube: CubeData, algorithm: string) {
   const moves = algorithm.split(" ");
   let validMoveCount = 0;
 
@@ -290,14 +290,14 @@ export function performAlg(cube: Cube, algorithm: string) {
       validMoveCount += turn(cube, move.slice(0, -1));
       for (let i = 1; i < lastChar; i++) turn(cube, move.slice(0, -1));
     } else {
-      validMoveCount += turn(cube, move);
+      validMoveCount = validMoveCount + turn(cube, move);
     }
   }
 
   return cube;
 }
 
-export function turn(cube: Cube, move: string) {
+export function turn(cube: CubeData, move: string) {
   switch (move) {
     case "R": {
       const tempCorner = {
@@ -1721,7 +1721,7 @@ export function turn(cube: Cube, move: string) {
 }
 
 export function getStickerColour(
-  cube: Cube,
+  cube: CubeData,
   pieceType: "corner" | "edge" | "center",
   letter: string
 ) {
@@ -1898,7 +1898,7 @@ export function getStickerColour(
 }
 
 export function setStickerColour(
-  cube: Cube,
+  cube: CubeData,
   pieceType: "corner" | "edge" | "center",
   letter: ValidStickerLetter,
   colour: CubeColour
@@ -2286,7 +2286,7 @@ export function nextStickerClockwise(
 }
 
 export function swap(
-  cube: Cube,
+  cube: CubeData,
   pieceType: "corner" | "edge",
   buffer: ValidStickerLetter,
   letter: ValidStickerLetter
@@ -2348,7 +2348,7 @@ export function swap(
   }
 }
 
-export function printCube(cube: Cube) {
+export function printCube(cube: CubeData) {
   console.log("U");
   console.log(
     getStickerColour(cube, "corner", "A"),
