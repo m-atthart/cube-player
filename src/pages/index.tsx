@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
 import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import { getSolvedCube, performAlg, type CubeData } from "cuber";
 import CubeMesh from "../components/Cube";
 import Sidebar from "../components/Sidebar";
@@ -29,6 +30,7 @@ export default function Home() {
               }}
             >
               <CubeMesh cube={cube} position={[0, 0, 0]} />
+              <OrbitControls enablePan={false} enableZoom={false} />
             </Canvas>
           </div>
           <div className="flex items-center justify-center gap-4">
