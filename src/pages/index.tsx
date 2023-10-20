@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { useState } from "react";
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { getSolvedCube, performAlg, type CubeData } from "cuber";
@@ -9,6 +11,10 @@ import Sidebar from "../components/Sidebar";
 export default function Home() {
   const [cube, setCube] = useState<CubeData>(getSolvedCube());
   const [inputAlg, setInputAlg] = useState<string>("");
+
+  const performAlgOnCube = (alg: string) => {
+    setCube({ ...performAlg(cube, alg) });
+  };
 
   return (
     <>
@@ -34,20 +40,15 @@ export default function Home() {
             </Canvas>
           </div>
           <div className="flex items-center justify-center gap-4">
-            <input
-              className="rounded-md bg-white px-4 py-2"
+            <Input
+              className="light px-4 py-2 text-black"
               value={inputAlg}
               onChange={(e) => setInputAlg(e.target.value)}
             />
-            <button
-              className="rounded-md bg-white px-4 py-2"
-              onClick={() => setCube({ ...performAlg(cube, inputAlg) })}
-            >
-              turn
-            </button>
+            <Button onClick={() => performAlgOnCube(inputAlg)}>turn</Button>
           </div>
         </div>
-        <Sidebar />
+        <Sidebar cube={cube} performAlgOnCube={performAlgOnCube} />
       </main>
     </>
   );
