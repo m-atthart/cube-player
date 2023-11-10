@@ -34,6 +34,7 @@ export default function Home() {
                 far: 1000,
                 position: [3.5, 3.5, 5.5],
               }}
+              className="cursor-pointer border border-white"
             >
               <CubeMesh cube={cube} position={[0, 0, 0]} />
               <OrbitControls enablePan={false} enableZoom={false} />
