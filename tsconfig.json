@@ -26,7 +26,8 @@
       "next/image-types/global",
       "react",
       "react-dom",
-      "three"
+      "three",
+      "eslint"
     ]
   },
   "include": [
