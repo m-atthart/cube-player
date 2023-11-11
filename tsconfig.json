@@ -19,7 +19,15 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+    "types": [
+      "node",
+      "next",
+      "next/image-types/global",
+      "react",
+      "react-dom",
+      "three"
+    ]
   },
   "include": [
     ".eslintrc.cjs",
