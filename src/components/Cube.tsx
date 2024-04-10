@@ -9,7 +9,7 @@ import {
 import { DoubleSide } from "three";
 
 export default function Cube(
-  props: ThreeElements["mesh"] & { cube: CubeData }
+  props: ThreeElements["mesh"] & { cube: CubeData },
 ) {
   const { camera } = useThree();
   camera.lookAt(0, 0, 0);
@@ -395,10 +395,10 @@ function Sticker(
     cube: CubeData;
     pieceType: "corner" | "edge" | "center";
     letter: ValidStickerLetter;
-  }
+  },
 ) {
   const [colour, setColour] = useState<CubeColour>(
-    getStickerColour(props.cube, props.pieceType, props.letter)
+    getStickerColour(props.cube, props.pieceType, props.letter),
   );
   useEffect(() => {
     setColour(getStickerColour(props.cube, props.pieceType, props.letter));

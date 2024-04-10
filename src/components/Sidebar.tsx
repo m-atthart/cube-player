@@ -55,10 +55,7 @@ export default function Sidebar(props: {
   };
 
   return (
-    <div
-      className="flex flex-col 
-    items-center justify-start gap-2"
-    >
+    <div className="flex flex-col items-center justify-start gap-2">
       <Accordion type="multiple">
         <AccordionItem value="individual-moves">
           <AccordionTrigger>Individual Moves</AccordionTrigger>
@@ -100,8 +97,7 @@ export default function Sidebar(props: {
             {tempAlgs[chosenAlgSet]?.map((alg) => (
               <div
                 key={alg.name}
-                className="flex items-center justify-between gap-2
-          "
+                className="flex items-center justify-between gap-2"
               >
                 <Button
                   onClick={() => props.performAlgOnCube(alg.alg)}

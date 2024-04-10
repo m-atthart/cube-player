@@ -314,57 +314,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "C",
-        getStickerColour(cube, "corner", "K")
+        getStickerColour(cube, "corner", "K"),
       );
       setStickerColour(
         cube,
         "corner",
         "J",
-        getStickerColour(cube, "corner", "V")
+        getStickerColour(cube, "corner", "V"),
       );
       setStickerColour(
         cube,
         "corner",
         "M",
-        getStickerColour(cube, "corner", "P")
+        getStickerColour(cube, "corner", "P"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "V",
-        getStickerColour(cube, "corner", "T")
+        getStickerColour(cube, "corner", "T"),
       );
       setStickerColour(
         cube,
         "corner",
         "K",
-        getStickerColour(cube, "corner", "W")
+        getStickerColour(cube, "corner", "W"),
       );
       setStickerColour(
         cube,
         "corner",
         "P",
-        getStickerColour(cube, "corner", "O")
+        getStickerColour(cube, "corner", "O"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "W",
-        getStickerColour(cube, "corner", "Q")
+        getStickerColour(cube, "corner", "Q"),
       );
       setStickerColour(
         cube,
         "corner",
         "T",
-        getStickerColour(cube, "corner", "B")
+        getStickerColour(cube, "corner", "B"),
       );
       setStickerColour(
         cube,
         "corner",
         "O",
-        getStickerColour(cube, "corner", "N")
+        getStickerColour(cube, "corner", "N"),
       );
 
       setStickerColour(cube, "corner", "B", tempCorner.J);
@@ -401,57 +401,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "C",
-        getStickerColour(cube, "corner", "Q")
+        getStickerColour(cube, "corner", "Q"),
       );
       setStickerColour(
         cube,
         "corner",
         "J",
-        getStickerColour(cube, "corner", "B")
+        getStickerColour(cube, "corner", "B"),
       );
       setStickerColour(
         cube,
         "corner",
         "M",
-        getStickerColour(cube, "corner", "N")
+        getStickerColour(cube, "corner", "N"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "B",
-        getStickerColour(cube, "corner", "T")
+        getStickerColour(cube, "corner", "T"),
       );
       setStickerColour(
         cube,
         "corner",
         "Q",
-        getStickerColour(cube, "corner", "W")
+        getStickerColour(cube, "corner", "W"),
       );
       setStickerColour(
         cube,
         "corner",
         "N",
-        getStickerColour(cube, "corner", "O")
+        getStickerColour(cube, "corner", "O"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "W",
-        getStickerColour(cube, "corner", "K")
+        getStickerColour(cube, "corner", "K"),
       );
       setStickerColour(
         cube,
         "corner",
         "T",
-        getStickerColour(cube, "corner", "V")
+        getStickerColour(cube, "corner", "V"),
       );
       setStickerColour(
         cube,
         "corner",
         "O",
-        getStickerColour(cube, "corner", "P")
+        getStickerColour(cube, "corner", "P"),
       );
 
       setStickerColour(cube, "corner", "V", tempCorner.J);
@@ -488,57 +488,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "D",
-        getStickerColour(cube, "corner", "R")
+        getStickerColour(cube, "corner", "R"),
       );
       setStickerColour(
         cube,
         "corner",
         "I",
-        getStickerColour(cube, "corner", "A")
+        getStickerColour(cube, "corner", "A"),
       );
       setStickerColour(
         cube,
         "corner",
         "F",
-        getStickerColour(cube, "corner", "E")
+        getStickerColour(cube, "corner", "E"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "A",
-        getStickerColour(cube, "corner", "S")
+        getStickerColour(cube, "corner", "S"),
       );
       setStickerColour(
         cube,
         "corner",
         "R",
-        getStickerColour(cube, "corner", "X")
+        getStickerColour(cube, "corner", "X"),
       );
       setStickerColour(
         cube,
         "corner",
         "E",
-        getStickerColour(cube, "corner", "H")
+        getStickerColour(cube, "corner", "H"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "X",
-        getStickerColour(cube, "corner", "L")
+        getStickerColour(cube, "corner", "L"),
       );
       setStickerColour(
         cube,
         "corner",
         "S",
-        getStickerColour(cube, "corner", "U")
+        getStickerColour(cube, "corner", "U"),
       );
       setStickerColour(
         cube,
         "corner",
         "H",
-        getStickerColour(cube, "corner", "G")
+        getStickerColour(cube, "corner", "G"),
       );
 
       setStickerColour(cube, "corner", "U", tempCorner.I);
@@ -575,57 +575,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "D",
-        getStickerColour(cube, "corner", "L")
+        getStickerColour(cube, "corner", "L"),
       );
       setStickerColour(
         cube,
         "corner",
         "I",
-        getStickerColour(cube, "corner", "U")
+        getStickerColour(cube, "corner", "U"),
       );
       setStickerColour(
         cube,
         "corner",
         "F",
-        getStickerColour(cube, "corner", "G")
+        getStickerColour(cube, "corner", "G"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "U",
-        getStickerColour(cube, "corner", "S")
+        getStickerColour(cube, "corner", "S"),
       );
       setStickerColour(
         cube,
         "corner",
         "L",
-        getStickerColour(cube, "corner", "X")
+        getStickerColour(cube, "corner", "X"),
       );
       setStickerColour(
         cube,
         "corner",
         "G",
-        getStickerColour(cube, "corner", "H")
+        getStickerColour(cube, "corner", "H"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "X",
-        getStickerColour(cube, "corner", "R")
+        getStickerColour(cube, "corner", "R"),
       );
       setStickerColour(
         cube,
         "corner",
         "S",
-        getStickerColour(cube, "corner", "A")
+        getStickerColour(cube, "corner", "A"),
       );
       setStickerColour(
         cube,
         "corner",
         "H",
-        getStickerColour(cube, "corner", "E")
+        getStickerColour(cube, "corner", "E"),
       );
 
       setStickerColour(cube, "corner", "A", tempCorner.I);
@@ -662,57 +662,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "C",
-        getStickerColour(cube, "corner", "B")
+        getStickerColour(cube, "corner", "B"),
       );
       setStickerColour(
         cube,
         "corner",
         "J",
-        getStickerColour(cube, "corner", "N")
+        getStickerColour(cube, "corner", "N"),
       );
       setStickerColour(
         cube,
         "corner",
         "M",
-        getStickerColour(cube, "corner", "Q")
+        getStickerColour(cube, "corner", "Q"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "B",
-        getStickerColour(cube, "corner", "A")
+        getStickerColour(cube, "corner", "A"),
       );
       setStickerColour(
         cube,
         "corner",
         "Q",
-        getStickerColour(cube, "corner", "E")
+        getStickerColour(cube, "corner", "E"),
       );
       setStickerColour(
         cube,
         "corner",
         "N",
-        getStickerColour(cube, "corner", "R")
+        getStickerColour(cube, "corner", "R"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "A",
-        getStickerColour(cube, "corner", "D")
+        getStickerColour(cube, "corner", "D"),
       );
       setStickerColour(
         cube,
         "corner",
         "R",
-        getStickerColour(cube, "corner", "F")
+        getStickerColour(cube, "corner", "F"),
       );
       setStickerColour(
         cube,
         "corner",
         "E",
-        getStickerColour(cube, "corner", "I")
+        getStickerColour(cube, "corner", "I"),
       );
 
       setStickerColour(cube, "corner", "D", tempCorner.C);
@@ -749,57 +749,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "D",
-        getStickerColour(cube, "corner", "A")
+        getStickerColour(cube, "corner", "A"),
       );
       setStickerColour(
         cube,
         "corner",
         "I",
-        getStickerColour(cube, "corner", "E")
+        getStickerColour(cube, "corner", "E"),
       );
       setStickerColour(
         cube,
         "corner",
         "F",
-        getStickerColour(cube, "corner", "R")
+        getStickerColour(cube, "corner", "R"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "A",
-        getStickerColour(cube, "corner", "B")
+        getStickerColour(cube, "corner", "B"),
       );
       setStickerColour(
         cube,
         "corner",
         "R",
-        getStickerColour(cube, "corner", "N")
+        getStickerColour(cube, "corner", "N"),
       );
       setStickerColour(
         cube,
         "corner",
         "E",
-        getStickerColour(cube, "corner", "Q")
+        getStickerColour(cube, "corner", "Q"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "B",
-        getStickerColour(cube, "corner", "C")
+        getStickerColour(cube, "corner", "C"),
       );
       setStickerColour(
         cube,
         "corner",
         "N",
-        getStickerColour(cube, "corner", "J")
+        getStickerColour(cube, "corner", "J"),
       );
       setStickerColour(
         cube,
         "corner",
         "Q",
-        getStickerColour(cube, "corner", "M")
+        getStickerColour(cube, "corner", "M"),
       );
 
       setStickerColour(cube, "corner", "C", tempCorner.D);
@@ -836,57 +836,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "V",
-        getStickerColour(cube, "corner", "U")
+        getStickerColour(cube, "corner", "U"),
       );
       setStickerColour(
         cube,
         "corner",
         "K",
-        getStickerColour(cube, "corner", "G")
+        getStickerColour(cube, "corner", "G"),
       );
       setStickerColour(
         cube,
         "corner",
         "P",
-        getStickerColour(cube, "corner", "L")
+        getStickerColour(cube, "corner", "L"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "U",
-        getStickerColour(cube, "corner", "X")
+        getStickerColour(cube, "corner", "X"),
       );
       setStickerColour(
         cube,
         "corner",
         "L",
-        getStickerColour(cube, "corner", "H")
+        getStickerColour(cube, "corner", "H"),
       );
       setStickerColour(
         cube,
         "corner",
         "G",
-        getStickerColour(cube, "corner", "S")
+        getStickerColour(cube, "corner", "S"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "X",
-        getStickerColour(cube, "corner", "W")
+        getStickerColour(cube, "corner", "W"),
       );
       setStickerColour(
         cube,
         "corner",
         "S",
-        getStickerColour(cube, "corner", "O")
+        getStickerColour(cube, "corner", "O"),
       );
       setStickerColour(
         cube,
         "corner",
         "H",
-        getStickerColour(cube, "corner", "T")
+        getStickerColour(cube, "corner", "T"),
       );
 
       setStickerColour(cube, "corner", "W", tempCorner.V);
@@ -923,57 +923,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "V",
-        getStickerColour(cube, "corner", "W")
+        getStickerColour(cube, "corner", "W"),
       );
       setStickerColour(
         cube,
         "corner",
         "K",
-        getStickerColour(cube, "corner", "O")
+        getStickerColour(cube, "corner", "O"),
       );
       setStickerColour(
         cube,
         "corner",
         "P",
-        getStickerColour(cube, "corner", "T")
+        getStickerColour(cube, "corner", "T"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "W",
-        getStickerColour(cube, "corner", "X")
+        getStickerColour(cube, "corner", "X"),
       );
       setStickerColour(
         cube,
         "corner",
         "T",
-        getStickerColour(cube, "corner", "H")
+        getStickerColour(cube, "corner", "H"),
       );
       setStickerColour(
         cube,
         "corner",
         "O",
-        getStickerColour(cube, "corner", "S")
+        getStickerColour(cube, "corner", "S"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "X",
-        getStickerColour(cube, "corner", "U")
+        getStickerColour(cube, "corner", "U"),
       );
       setStickerColour(
         cube,
         "corner",
         "S",
-        getStickerColour(cube, "corner", "G")
+        getStickerColour(cube, "corner", "G"),
       );
       setStickerColour(
         cube,
         "corner",
         "H",
-        getStickerColour(cube, "corner", "L")
+        getStickerColour(cube, "corner", "L"),
       );
 
       setStickerColour(cube, "corner", "U", tempCorner.V);
@@ -1010,57 +1010,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "C",
-        getStickerColour(cube, "corner", "F")
+        getStickerColour(cube, "corner", "F"),
       );
       setStickerColour(
         cube,
         "corner",
         "J",
-        getStickerColour(cube, "corner", "I")
+        getStickerColour(cube, "corner", "I"),
       );
       setStickerColour(
         cube,
         "corner",
         "M",
-        getStickerColour(cube, "corner", "D")
+        getStickerColour(cube, "corner", "D"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "D",
-        getStickerColour(cube, "corner", "G")
+        getStickerColour(cube, "corner", "G"),
       );
       setStickerColour(
         cube,
         "corner",
         "I",
-        getStickerColour(cube, "corner", "L")
+        getStickerColour(cube, "corner", "L"),
       );
       setStickerColour(
         cube,
         "corner",
         "F",
-        getStickerColour(cube, "corner", "U")
+        getStickerColour(cube, "corner", "U"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "U",
-        getStickerColour(cube, "corner", "P")
+        getStickerColour(cube, "corner", "P"),
       );
       setStickerColour(
         cube,
         "corner",
         "L",
-        getStickerColour(cube, "corner", "K")
+        getStickerColour(cube, "corner", "K"),
       );
       setStickerColour(
         cube,
         "corner",
         "G",
-        getStickerColour(cube, "corner", "V")
+        getStickerColour(cube, "corner", "V"),
       );
 
       setStickerColour(cube, "corner", "V", tempCorner.M);
@@ -1097,57 +1097,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "C",
-        getStickerColour(cube, "corner", "P")
+        getStickerColour(cube, "corner", "P"),
       );
       setStickerColour(
         cube,
         "corner",
         "J",
-        getStickerColour(cube, "corner", "K")
+        getStickerColour(cube, "corner", "K"),
       );
       setStickerColour(
         cube,
         "corner",
         "M",
-        getStickerColour(cube, "corner", "V")
+        getStickerColour(cube, "corner", "V"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "V",
-        getStickerColour(cube, "corner", "G")
+        getStickerColour(cube, "corner", "G"),
       );
       setStickerColour(
         cube,
         "corner",
         "K",
-        getStickerColour(cube, "corner", "L")
+        getStickerColour(cube, "corner", "L"),
       );
       setStickerColour(
         cube,
         "corner",
         "P",
-        getStickerColour(cube, "corner", "U")
+        getStickerColour(cube, "corner", "U"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "U",
-        getStickerColour(cube, "corner", "F")
+        getStickerColour(cube, "corner", "F"),
       );
       setStickerColour(
         cube,
         "corner",
         "L",
-        getStickerColour(cube, "corner", "I")
+        getStickerColour(cube, "corner", "I"),
       );
       setStickerColour(
         cube,
         "corner",
         "G",
-        getStickerColour(cube, "corner", "D")
+        getStickerColour(cube, "corner", "D"),
       );
 
       setStickerColour(cube, "corner", "D", tempCorner.M);
@@ -1184,57 +1184,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "B",
-        getStickerColour(cube, "corner", "O")
+        getStickerColour(cube, "corner", "O"),
       );
       setStickerColour(
         cube,
         "corner",
         "Q",
-        getStickerColour(cube, "corner", "T")
+        getStickerColour(cube, "corner", "T"),
       );
       setStickerColour(
         cube,
         "corner",
         "N",
-        getStickerColour(cube, "corner", "W")
+        getStickerColour(cube, "corner", "W"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "W",
-        getStickerColour(cube, "corner", "H")
+        getStickerColour(cube, "corner", "H"),
       );
       setStickerColour(
         cube,
         "corner",
         "T",
-        getStickerColour(cube, "corner", "S")
+        getStickerColour(cube, "corner", "S"),
       );
       setStickerColour(
         cube,
         "corner",
         "O",
-        getStickerColour(cube, "corner", "X")
+        getStickerColour(cube, "corner", "X"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "X",
-        getStickerColour(cube, "corner", "E")
+        getStickerColour(cube, "corner", "E"),
       );
       setStickerColour(
         cube,
         "corner",
         "S",
-        getStickerColour(cube, "corner", "R")
+        getStickerColour(cube, "corner", "R"),
       );
       setStickerColour(
         cube,
         "corner",
         "H",
-        getStickerColour(cube, "corner", "A")
+        getStickerColour(cube, "corner", "A"),
       );
 
       setStickerColour(cube, "corner", "A", tempCorner.N);
@@ -1271,57 +1271,57 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "corner",
         "B",
-        getStickerColour(cube, "corner", "E")
+        getStickerColour(cube, "corner", "E"),
       );
       setStickerColour(
         cube,
         "corner",
         "Q",
-        getStickerColour(cube, "corner", "R")
+        getStickerColour(cube, "corner", "R"),
       );
       setStickerColour(
         cube,
         "corner",
         "N",
-        getStickerColour(cube, "corner", "A")
+        getStickerColour(cube, "corner", "A"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "A",
-        getStickerColour(cube, "corner", "H")
+        getStickerColour(cube, "corner", "H"),
       );
       setStickerColour(
         cube,
         "corner",
         "R",
-        getStickerColour(cube, "corner", "S")
+        getStickerColour(cube, "corner", "S"),
       );
       setStickerColour(
         cube,
         "corner",
         "E",
-        getStickerColour(cube, "corner", "X")
+        getStickerColour(cube, "corner", "X"),
       );
 
       setStickerColour(
         cube,
         "corner",
         "X",
-        getStickerColour(cube, "corner", "O")
+        getStickerColour(cube, "corner", "O"),
       );
       setStickerColour(
         cube,
         "corner",
         "S",
-        getStickerColour(cube, "corner", "T")
+        getStickerColour(cube, "corner", "T"),
       );
       setStickerColour(
         cube,
         "corner",
         "H",
-        getStickerColour(cube, "corner", "W")
+        getStickerColour(cube, "corner", "W"),
       );
 
       setStickerColour(cube, "corner", "W", tempCorner.N);
@@ -1367,19 +1367,19 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "center",
         "U",
-        getStickerColour(cube, "center", "B")
+        getStickerColour(cube, "center", "B"),
       );
       setStickerColour(
         cube,
         "center",
         "B",
-        getStickerColour(cube, "center", "D")
+        getStickerColour(cube, "center", "D"),
       );
       setStickerColour(
         cube,
         "center",
         "D",
-        getStickerColour(cube, "center", "F")
+        getStickerColour(cube, "center", "F"),
       );
       setStickerColour(cube, "center", "F", tempCenter);
 
@@ -1409,19 +1409,19 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "center",
         "U",
-        getStickerColour(cube, "center", "F")
+        getStickerColour(cube, "center", "F"),
       );
       setStickerColour(
         cube,
         "center",
         "F",
-        getStickerColour(cube, "center", "D")
+        getStickerColour(cube, "center", "D"),
       );
       setStickerColour(
         cube,
         "center",
         "D",
-        getStickerColour(cube, "center", "B")
+        getStickerColour(cube, "center", "B"),
       );
       setStickerColour(cube, "center", "B", tempCenter);
 
@@ -1452,19 +1452,19 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "center",
         "U",
-        getStickerColour(cube, "center", "L")
+        getStickerColour(cube, "center", "L"),
       );
       setStickerColour(
         cube,
         "center",
         "L",
-        getStickerColour(cube, "center", "D")
+        getStickerColour(cube, "center", "D"),
       );
       setStickerColour(
         cube,
         "center",
         "D",
-        getStickerColour(cube, "center", "R")
+        getStickerColour(cube, "center", "R"),
       );
       setStickerColour(cube, "center", "R", tempCenter);
 
@@ -1494,19 +1494,19 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "center",
         "U",
-        getStickerColour(cube, "center", "R")
+        getStickerColour(cube, "center", "R"),
       );
       setStickerColour(
         cube,
         "center",
         "R",
-        getStickerColour(cube, "center", "D")
+        getStickerColour(cube, "center", "D"),
       );
       setStickerColour(
         cube,
         "center",
         "D",
-        getStickerColour(cube, "center", "L")
+        getStickerColour(cube, "center", "L"),
       );
       setStickerColour(cube, "center", "L", tempCenter);
 
@@ -1537,19 +1537,19 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "center",
         "F",
-        getStickerColour(cube, "center", "L")
+        getStickerColour(cube, "center", "L"),
       );
       setStickerColour(
         cube,
         "center",
         "L",
-        getStickerColour(cube, "center", "B")
+        getStickerColour(cube, "center", "B"),
       );
       setStickerColour(
         cube,
         "center",
         "B",
-        getStickerColour(cube, "center", "R")
+        getStickerColour(cube, "center", "R"),
       );
       setStickerColour(cube, "center", "R", tempCenter);
 
@@ -1579,19 +1579,19 @@ export function turn(cube: CubeData, move: string) {
         cube,
         "center",
         "F",
-        getStickerColour(cube, "center", "R")
+        getStickerColour(cube, "center", "R"),
       );
       setStickerColour(
         cube,
         "center",
         "R",
-        getStickerColour(cube, "center", "B")
+        getStickerColour(cube, "center", "B"),
       );
       setStickerColour(
         cube,
         "center",
         "B",
-        getStickerColour(cube, "center", "L")
+        getStickerColour(cube, "center", "L"),
       );
       setStickerColour(cube, "center", "L", tempCenter);
 
@@ -1723,7 +1723,7 @@ export function turn(cube: CubeData, move: string) {
 export function getStickerColour(
   cube: CubeData,
   pieceType: "corner" | "edge" | "center",
-  letter: string
+  letter: string,
 ) {
   if (pieceType === "corner") {
     switch (letter) {
@@ -1901,7 +1901,7 @@ export function setStickerColour(
   cube: CubeData,
   pieceType: "corner" | "edge" | "center",
   letter: ValidStickerLetter,
-  colour: CubeColour
+  colour: CubeColour,
 ) {
   if (pieceType === "corner") {
     switch (letter) {
@@ -2131,7 +2131,7 @@ export function setStickerColour(
 
 export function nextStickerClockwise(
   pieceType: "corner" | "edge",
-  letter: ValidStickerLetter
+  letter: ValidStickerLetter,
 ) {
   if (pieceType === "corner") {
     switch (letter) {
@@ -2289,7 +2289,7 @@ export function swap(
   cube: CubeData,
   pieceType: "corner" | "edge",
   buffer: ValidStickerLetter,
-  letter: ValidStickerLetter
+  letter: ValidStickerLetter,
 ) {
   if (pieceType === "corner") {
     const bufferStickers = [
@@ -2353,101 +2353,101 @@ export function printCube(cube: CubeData) {
   console.log(
     getStickerColour(cube, "corner", "A"),
     getStickerColour(cube, "edge", "A"),
-    getStickerColour(cube, "corner", "B")
+    getStickerColour(cube, "corner", "B"),
   );
   console.log(
     getStickerColour(cube, "edge", "D"),
     getStickerColour(cube, "center", "U"),
-    getStickerColour(cube, "edge", "B")
+    getStickerColour(cube, "edge", "B"),
   );
   console.log(
     getStickerColour(cube, "corner", "D"),
     getStickerColour(cube, "edge", "C"),
-    getStickerColour(cube, "corner", "C")
+    getStickerColour(cube, "corner", "C"),
   );
 
   console.log("L");
   console.log(
     getStickerColour(cube, "corner", "E"),
     getStickerColour(cube, "edge", "E"),
-    getStickerColour(cube, "corner", "F")
+    getStickerColour(cube, "corner", "F"),
   );
   console.log(
     getStickerColour(cube, "edge", "H"),
     getStickerColour(cube, "center", "L"),
-    getStickerColour(cube, "edge", "F")
+    getStickerColour(cube, "edge", "F"),
   );
   console.log(
     getStickerColour(cube, "corner", "H"),
     getStickerColour(cube, "edge", "G"),
-    getStickerColour(cube, "corner", "G")
+    getStickerColour(cube, "corner", "G"),
   );
 
   console.log("F");
   console.log(
     getStickerColour(cube, "corner", "I"),
     getStickerColour(cube, "edge", "I"),
-    getStickerColour(cube, "corner", "J")
+    getStickerColour(cube, "corner", "J"),
   );
   console.log(
     getStickerColour(cube, "edge", "L"),
     getStickerColour(cube, "center", "F"),
-    getStickerColour(cube, "edge", "J")
+    getStickerColour(cube, "edge", "J"),
   );
   console.log(
     getStickerColour(cube, "corner", "L"),
     getStickerColour(cube, "edge", "K"),
-    getStickerColour(cube, "corner", "K")
+    getStickerColour(cube, "corner", "K"),
   );
 
   console.log("R");
   console.log(
     getStickerColour(cube, "corner", "M"),
     getStickerColour(cube, "edge", "M"),
-    getStickerColour(cube, "corner", "N")
+    getStickerColour(cube, "corner", "N"),
   );
   console.log(
     getStickerColour(cube, "edge", "P"),
     getStickerColour(cube, "center", "R"),
-    getStickerColour(cube, "edge", "N")
+    getStickerColour(cube, "edge", "N"),
   );
   console.log(
     getStickerColour(cube, "corner", "P"),
     getStickerColour(cube, "edge", "O"),
-    getStickerColour(cube, "corner", "O")
+    getStickerColour(cube, "corner", "O"),
   );
 
   console.log("B");
   console.log(
     getStickerColour(cube, "corner", "Q"),
     getStickerColour(cube, "edge", "Q"),
-    getStickerColour(cube, "corner", "R")
+    getStickerColour(cube, "corner", "R"),
   );
   console.log(
     getStickerColour(cube, "edge", "T"),
     getStickerColour(cube, "center", "B"),
-    getStickerColour(cube, "edge", "R")
+    getStickerColour(cube, "edge", "R"),
   );
   console.log(
     getStickerColour(cube, "corner", "T"),
     getStickerColour(cube, "edge", "S"),
-    getStickerColour(cube, "corner", "S")
+    getStickerColour(cube, "corner", "S"),
   );
 
   console.log("D");
   console.log(
     getStickerColour(cube, "corner", "U"),
     getStickerColour(cube, "edge", "U"),
-    getStickerColour(cube, "corner", "V")
+    getStickerColour(cube, "corner", "V"),
   );
   console.log(
     getStickerColour(cube, "edge", "X"),
     getStickerColour(cube, "center", "D"),
-    getStickerColour(cube, "edge", "V")
+    getStickerColour(cube, "edge", "V"),
   );
   console.log(
     getStickerColour(cube, "corner", "X"),
     getStickerColour(cube, "edge", "W"),
-    getStickerColour(cube, "corner", "W")
+    getStickerColour(cube, "corner", "W"),
   );
 }
