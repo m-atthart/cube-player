@@ -13,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { type CubeData } from "cuber";
+import { type CubeData } from "../lib/cuber";
 
 const validAbsoluteMoves = [
   "R",

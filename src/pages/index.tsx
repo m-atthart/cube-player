@@ -4,7 +4,7 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { getSolvedCube, performAlg, type CubeData } from "cuber";
+import { getSolvedCube, performAlg, type CubeData } from "../lib/cuber";
 import CubeMesh from "../components/Cube";
 import Sidebar from "../components/Sidebar";
 

@@ -5,7 +5,7 @@ import {
   type CubeData,
   type CubeColour,
   type ValidStickerLetter,
-} from "cuber";
+} from "../lib/cuber";
 import { DoubleSide } from "three";
 
 export default function Cube(

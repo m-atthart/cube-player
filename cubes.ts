@@ -1,6 +1,6 @@
 // turn into tests
 
-import { getSolvedCube, printCube, performAlg } from "cuber";
+import { getSolvedCube, printCube, performAlg } from "./src/lib/cuber";
 
 const cube = getSolvedCube();
 performAlg(cube, "B2 L2 D2 F R2 B D2 B' R2 F L2 F2 R F' U L B' F R U2");
