@@ -280,8 +280,23 @@ export function getSolvedCube() {
   return solvedCube;
 }
 
-export function performAlg(cube: CubeData, algorithm: string) {
-  const moves = algorithm.split(" ");
+function reverseAlg(algorithm: string[]) {
+  return algorithm.toReversed().map((move) => {
+    if (move.endsWith("'")) {
+      return move.slice(0, -1);
+    }
+    return move + "'";
+  });
+}
+
+export function performAlg(
+  cube: CubeData,
+  algorithm: string,
+  reversed = false,
+) {
+  const moves = reversed
+    ? reverseAlg(algorithm.split(" "))
+    : algorithm.split(" ");
   let validMoveCount = 0;
 
   for (const move of moves) {
