@@ -1,16 +1,40 @@
 import Head from "next/head";
 import { useState } from "react";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { getSolvedCube, performAlg, type CubeData } from "../lib/cuber";
-import CubeMesh from "../components/Cube";
-import Sidebar from "../components/Sidebar";
+import { getSolvedCube, performAlg, type CubeData } from "~/lib/cuber";
+import CubeMesh from "@/components/Cube";
+import Sidebar from "@/components/Sidebar";
+
+const tempAlgs: Record<string, { name: string; alg: string }[]> = {
+  OLL: [
+    { name: "Sune", alg: "R U R' U R U2 R'" },
+    { name: "Anti-Sune", alg: "R U2 R' U' R U' R'" },
+  ],
+  PLL: [
+    { name: "T", alg: "R U R' U' R' F R2 U' R' U' R U R' F'" },
+    { name: "J", alg: "R U R' F' R U R' U' R' F R2 U' R' U'" },
+    { name: "Y", alg: "F R U' R' U' R U R' F' R U R' U' R' F R F'" },
+  ],
+};
 
 export default function Home() {
   const [cube, setCube] = useState<CubeData>(getSolvedCube());
   const [inputAlg, setInputAlg] = useState<string>("");
+  const [inputAlgName, setInputAlgName] = useState<string>("");
+  const [inputAlgSet, setInputAlgSet] = useState<string>("");
+
+  const [inputAlgDescription, setInputAlgDescription] = useState<string>("");
 
   const performAlgOnCube = (alg: string, reversed = false) => {
     setCube({ ...performAlg(cube, alg, reversed) });
@@ -24,29 +48,76 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen items-center justify-between bg-gradient-to-b from-[#2e026d] to-[#15162c]">
-        <div className="flex w-full flex-col items-center justify-center">
-          <div className="h-[600px] w-[600px]">
-            <Canvas
-              camera={{
-                fov: 60,
-                aspect: 1,
-                near: 0.1,
-                far: 1000,
-                position: [3.5, 3.5, 5.5],
-              }}
-              className="cursor-pointer border border-white"
-            >
-              <CubeMesh cube={cube} position={[0, 0, 0]} />
-              <OrbitControls enablePan={false} enableZoom={false} />
-            </Canvas>
-          </div>
-          <div className="flex items-center justify-center gap-4">
-            <Input
-              className="light px-4 py-2 text-black"
-              value={inputAlg}
-              onChange={(e) => setInputAlg(e.target.value)}
-            />
-            <Button onClick={() => performAlgOnCube(inputAlg)}>turn</Button>
+        <div className="flex w-full items-center justify-center">
+          <div className="flex w-[600px] flex-col items-center justify-center gap-8">
+            <div className="h-[600px] w-full cursor-pointer border border-white">
+              <Canvas
+                camera={{
+                  fov: 60,
+                  aspect: 1,
+                  near: 0.1,
+                  far: 1000,
+                  position: [3.5, 3.5, 5.5],
+                }}
+              >
+                <CubeMesh cube={cube} position={[0, 0, 0]} />
+                <OrbitControls enablePan={false} enableZoom={false} />
+              </Canvas>
+            </div>
+            <div className="flex w-full flex-col items-end gap-4">
+              <div className="flex w-full gap-4">
+                <Input
+                  className="light px-4 py-2 text-black"
+                  placeholder="Algorithm"
+                  value={inputAlg}
+                  onChange={(e) => setInputAlg(e.target.value)}
+                />
+                <Button onClick={() => performAlgOnCube(inputAlg)}>Move</Button>
+                <Button onClick={() => performAlgOnCube(inputAlg, true)}>
+                  Inverse
+                </Button>
+              </div>
+              <div className="flex w-full gap-4">
+                <Input
+                  className="light px-4 py-2 text-black"
+                  placeholder="Name"
+                  value={inputAlgName}
+                  onChange={(e) => setInputAlgName(e.target.value)}
+                />
+                <Select
+                  value={inputAlgSet}
+                  onValueChange={(val) => setInputAlgSet(val)}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Alg Set" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {Object.keys(tempAlgs).map((algSetName) => (
+                      <SelectItem value={algSetName} key={algSetName}>
+                        {algSetName}
+                      </SelectItem>
+                    ))}
+                    <SelectItem value="add-new" key="add-new">
+                      +Add New
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <Textarea
+                className="light px-4 py-2 text-black"
+                placeholder="Description"
+                value={inputAlgDescription}
+                onChange={(e) => setInputAlgDescription(e.target.value)}
+              ></Textarea>
+              <Button
+                className="w-full"
+                onClick={() =>
+                  console.log(`saved ${inputAlgName}: ${inputAlg}`)
+                }
+              >
+                Save
+              </Button>
+            </div>
           </div>
         </div>
         <Sidebar cube={cube} performAlgOnCube={performAlgOnCube} />
